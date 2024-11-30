@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: [ 'Roboto Slab', 'serif' ],
+      colors: {
+        primary: '#9ABF80',
+        secondary: '#6A669D',
+        neutral: '#E5E3D4',
+        accent: '#1C325B',
+      },
+    },
   },
   plugins: [],
 }
