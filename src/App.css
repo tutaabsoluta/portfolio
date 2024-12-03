@@ -6,7 +6,7 @@ body {
 
 /* Global font settings */
 body {
-    @apply font-sans text-base leading-relaxed; /* Fuente base y estilo de texto */
+    @apply text-base leading-relaxed; /* Fuente base y estilo de texto */
   }
   
   /* Headings */
@@ -34,4 +34,6 @@ body {
   p {
     @apply text-sm md:text-base;
   }
+
+  
   
