@@ -11,7 +11,7 @@ export default {
         primary: '#FDC435',
         // primary: '#9ABF80',
         secondary: '#6A669D',
-        neutral: '#E5E3D4',
+        neutral: '#F9FAFF',
         accent: '#1C325B',
       },
     },

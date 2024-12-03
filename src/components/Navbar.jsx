@@ -1,16 +1,18 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <nav className="container mx-auto mt-8 relative z-20">
       <div className="flex justify-between">
-        <p className="text-xl">Sergio Duran</p>
+        <Link to='/'>
+          <p className="text-[18px]">Sergio Duran</p>
+        </Link>
 
         <div className="flex gap-12">
           <NavLink
             to="about"
             className={({ isActive }) =>
-              `text-xl ${isActive ? "underline" : ""}`
+              `text-[18px] ${isActive ? "underline" : ""}`
             }
           >
             About
@@ -19,7 +21,7 @@ export const Navbar = () => {
           <NavLink
             to="projects"
             className={({ isActive }) =>
-              `text-xl ${isActive ? "underline" : ""}`
+              `text-[18px] ${isActive ? "underline" : ""}`
             }
           >
             Projects
@@ -28,7 +30,7 @@ export const Navbar = () => {
           <NavLink
             to="contact"
             className={({ isActive }) =>
-              `text-xl ${isActive ? "underline" : ""}`
+              `text-[18px] ${isActive ? "underline" : ""}`
             }
           >
             Contact
@@ -38,5 +40,3 @@ export const Navbar = () => {
     </nav>
   );
 };
-
-

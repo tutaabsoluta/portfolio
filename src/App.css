@@ -2,20 +2,21 @@ Globals
 
 body {
     font-family: 'Roboto Slab', serif;
-}
+  }
+
 
 /* Global font settings */
 body {
-    @apply text-base leading-relaxed; /* Fuente base y estilo de texto */
+    @apply text-base leading-relaxed bg-neutral; 
   }
   
   /* Headings */
   h1 {
-    @apply text-4xl md:text-5xl font-bold; 
+    @apply text-4xl md:text-[64px] font-bold; 
   }
   
   h2 {
-    @apply text-3xl md:text-4xl font-semibold; 
+    @apply text-3xl md:text-[48px] font-semibold; 
   }
   
   h3 {
