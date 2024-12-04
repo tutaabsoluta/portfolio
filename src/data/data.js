@@ -21,3 +21,92 @@ export const projects = [
     link: 'https://patientszustandtta.netlify.app/',
   },
 ];
+
+export const skills = [
+  {
+    id: 1,
+    title: 'Html',
+    image: 'html.webp',
+  },
+  {
+    id: 2,
+    title: 'Css',
+    image: 'css.webp',
+  },
+  {
+    id: 3,
+    title: 'JavaScript',
+    image: 'js.webp',
+  },
+  {
+    id: 4,
+    title: 'TailwindCSS',
+    image: 'tailwind.webp',
+  },
+  {
+    id: 5,
+    title: 'React',
+    image: 'react.webp',
+  },
+  {
+    id: 6,
+    title: 'Zustand',
+    image: 'zustand.webp',
+  },
+  {
+    id: 7,
+    title: 'Jest',
+    image: 'jest.webp',
+  },,
+  {
+    id: 8,
+    title: 'Git',
+    image: 'git.svg',
+  }
+]
+
+export const learningSkills = [
+  {
+    id: 1,
+    title: 'Redux',
+    image: 'redux.webp',
+  },
+  {
+    id: 1,
+    title: '.NET Framework',
+    image: '.net.svg',
+  },
+  {
+    id: 1,
+    title: 'TypeScript',
+    image: 'ts.png',
+  },
+  {
+    id: 1,
+    title: 'Figma',
+    image: 'figma.svg',
+  },
+]
+
+export const otherSkills = [
+  {
+    id: 1,
+    title: 'Spanish',
+    image: 'spanish.svg',
+  },
+  {
+    id: 1,
+    title: 'English',
+    image: 'eng.svg',
+  },
+  {
+    id: 1,
+    title: 'C#',
+    image: 'csharp.svg',
+  },
+  {
+    id: 1,
+    title: 'Python',
+    image: 'python.svg',
+  },
+]

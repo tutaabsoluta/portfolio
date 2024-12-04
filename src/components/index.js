@@ -5,3 +5,4 @@ export * from './Heading';
 export * from './Navbar';
 export * from './ProjectCard';
 export * from './Projects';
+export * from './SkillCard';
