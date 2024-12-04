@@ -1,17 +1,21 @@
 import React from "react";
-import { Header } from "../ui";
-import { Projects } from '../components'
+import { ContactForm, Header } from "../ui";
+import { Heading, Projects } from "../components";
 
 export const HomePage = () => {
   return (
     <div className="container mx-auto">
       <Header />
-      <div className="mt-[-50px]">
-        <h2 className="text-center font-bold tracking-tight">Projects</h2>
-        <div className="w-[100px] h-[5px] bg-primary container mx-auto rounded-md mt-6 mb-12"></div>
+
+      <div className="mt-[-50px] mb-24">
+        <Heading title="Projects" />
+        <Projects />
       </div>
 
-      <Projects />
+      <Heading title='Contact'/>
+      <ContactForm />
+      
+
     </div>
   );
 };

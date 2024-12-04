@@ -7,7 +7,7 @@ export const Header = () => {
       {/* Content */}
       <div className="w-1/2 space-y-6">
         <p className="uppercase text-primary font-bold">Software Developer</p>
-        <h1>Hello, my name is Sergio Duran</h1>
+        <h1 className="leading-[60px]">Hello, my name is Sergio Duran</h1>
         <p>
           I am a software developer with a strong focus on frontend
           technologies. I am passionate about writing clean, maintainable code
