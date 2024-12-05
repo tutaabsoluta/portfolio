@@ -1,4 +1,4 @@
-import { Button, Heading, SkillCard } from "../components";
+import { Button, Education, Heading, SkillCard,  } from "../components";
 import { learningSkills, otherSkills, skills } from "../data";
 
 export const AboutPage = () => {
@@ -42,7 +42,7 @@ export const AboutPage = () => {
           </div>
         </div>
 
-        <div className="max-w-3xl mx-auto mt-16">
+        <div className="max-w-3xl mx-auto mt-16 mb-24">
           <Heading title={"Skills"} />
           <h3 className="uppercase mb-20">Using Now:</h3>
           <div className="grid grid-cols-4 place-items-center gap-y-16">
@@ -81,6 +81,8 @@ export const AboutPage = () => {
             }
           </div>
         </div>
+
+        <Education />
       </div>
     </>
   );

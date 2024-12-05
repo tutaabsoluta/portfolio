@@ -6,12 +6,9 @@ export const Header = () => {
     <header className="flex mt-16 z-0">
       {/* Content */}
       <div className="w-1/2 space-y-6">
-        <p className="uppercase text-primary font-bold">Software Developer</p>
-        <h1 className="leading-[60px]">Hello, my name is <span className="text-primary">Sergio Duran</span></h1>
+        <h1 className="leading-[60px]">Hello, my name is <span className="text-primary">Sergio.</span></h1>
         <p>
-          I am a software developer with a strong focus on frontend
-          technologies. I am passionate about writing clean, maintainable code
-          and staying up-to-date with the latest trends in frontend development.
+          I'm an <span className="text-primary font-bold">software developer</span> from San Jose, Costa Rica.
         </p>
         <div className="flex gap-4">
           <Link to="projects">

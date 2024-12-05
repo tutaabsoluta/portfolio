@@ -3,7 +3,7 @@ export const SkillCard = ({title, image}) => {
   return (
     <div className="flex flex-col items-center max-w-20">
         <div>
-            <img src={ image } alt={ title } />
+            <img src={ image } alt={ title } className="w-full h-[80px]" />
         </div>
 
         <div className="mt-4">

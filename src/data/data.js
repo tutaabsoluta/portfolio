@@ -41,17 +41,17 @@ export const skills = [
   {
     id: 4,
     title: 'TailwindCSS',
-    image: 'tailwind.webp',
+    image: 'tailwind.svg',
   },
   {
     id: 5,
     title: 'React',
-    image: 'react.webp',
+    image: 'react.svg',
   },
   {
     id: 6,
     title: 'Zustand',
-    image: 'zustand.webp',
+    image: 'zustand.svg',
   },
   {
     id: 7,
@@ -69,20 +69,20 @@ export const learningSkills = [
   {
     id: 1,
     title: 'Redux',
-    image: 'redux.webp',
+    image: 'redux.svg',
   },
   {
-    id: 1,
-    title: '.NET Framework',
-    image: '.net.svg',
+    id: 2,
+    title: 'NodeJS',
+    image: 'node.png',
   },
   {
-    id: 1,
+    id: 3,
     title: 'TypeScript',
     image: 'ts.png',
   },
   {
-    id: 1,
+    id: 4,
     title: 'Figma',
     image: 'figma.svg',
   },
@@ -91,22 +91,22 @@ export const learningSkills = [
 export const otherSkills = [
   {
     id: 1,
-    title: 'Spanish',
+    title: 'Spanish: Native',
     image: 'spanish.svg',
   },
   {
-    id: 1,
-    title: 'English',
+    id: 2,
+    title: 'English: B2',
     image: 'eng.svg',
   },
   {
-    id: 1,
+    id: 3,
     title: 'C#',
     image: 'csharp.svg',
   },
   {
-    id: 1,
-    title: 'Python',
-    image: 'python.svg',
+    id: 4,
+    title: 'SQL',
+    image: 'sql.svg',
   },
 ]
