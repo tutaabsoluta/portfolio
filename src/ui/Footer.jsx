@@ -1,34 +1,34 @@
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { RiMailFill } from "react-icons/ri";
-import { Link } from "react-router-dom";
+
 
 export const Footer = () => {
   return (
-    <footer className="mt-12">
+    <footer className="mt-12 bg-neutral">
       <div>
-        {/* Socials */}
-        <div className="flex items-center justify-center gap-4">
-          <Link to="https://github.com/tutaabsoluta">
-            <FaGithubSquare className="w-[40px] h-[40px]" />
-          </Link>
-          <Link to="http://www.linkedin.com/in/sergio-durán-018071260">
-            <FaLinkedin className="w-[40px] h-[40px]" />
-          </Link>
-          <a href="mailto:538ser@gmail.com" className="inline-block">
-            <RiMailFill className="w-[45px] h-[45px]" />
-          </a>
+        <hr className="border-t border-gray-600" />
+        {/* Copyright and Social */}
+        <div className="flex justify-between items-center px-12 py-2">
+          <div>
+            <p className="text-sm">Copyright © 2024 - Sergio Duran</p>
+          </div>
+          <div className="flex space-x-4">
+            <a
+              href="https://www.linkedin.com/in/sergio-dur%C3%A1n-018071260/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="text-xl hover:text-green-500 duration-300" />
+            </a>
+            <a
+              href="https://github.com/tutaabsoluta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="text-xl hover:text-green-500 duration-300" />
+            </a>
+          </div>
         </div>
-
-        <p className="text-center mt-8 text-slate-500">
-          Copyright © 2024 - Sergio Duran
-        </p>
-
-        <img
-          src="footer.png"
-          alt="Footer Image"
-          className="w-full h-full -mt-16"
-        />
       </div>
     </footer>
   );

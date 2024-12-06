@@ -17,11 +17,7 @@ export const HomePage = () => {
         <Heading title="Projects" />
         <Projects />
       </div>
-
-      <Heading title='Contact'/>
-      <ContactForm />
       
-
     </div>
   );
 };

@@ -4,44 +4,55 @@ import { FaSun, FaMoon } from "react-icons/fa";
 
 export const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
-
+  const [onLink, setOnLink] = useState(false);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
+
+
 
   return (
     <nav className="container mx-auto mt-8 relative z-20" >
       <div className="flex justify-between items-center">
         <Link to='/'>
-          <p className="text-[18px]">Sergio Duran</p>
+          <p className="text-[18px] text-primary font-bold">Sergio Duran</p>
         </Link>
 
         <div className="flex gap-12 items-center">
           <NavLink
             to="about"
             className={({ isActive }) =>
-              `text-[18px] transition duration-300 ease-in-out ${isActive ? "underline" : ""}`
+              `text-[14px] transition duration-300 ease-in-out relative group ${isActive && 'font-bold'}`
             }
+            onMouseEnter={() => setOnLink(true)}
+            onMouseLeave={() => setOnLink(false)}
           >
-            About
+            <span className="text-primary">01.</span> About
+            <span className={`absolute left-0 bottom-0 h-[2px] w-full bg-primary transform scale-x-0 transition-transform duration-[400ms] ${onLink ? 'origin-left': 'origin-right'} group-hover:scale-x-100`}></span>
           </NavLink>
 
           <NavLink
             to="projects"
             className={({ isActive }) =>
-              `text-[18px] transition duration-300 ease-in-out ${isActive ? "underline" : ""}`
+              `text-[14px] transition duration-300 ease-in-out relative group ${isActive && 'font-bold'}`
             }
+            onMouseEnter={() => setOnLink(true)}
+            onMouseLeave={() => setOnLink(false)}
           >
-            Projects
+            <span className="text-primary">02.</span> Projects
+            <span className={`absolute left-0 bottom-0 h-[2px] w-full bg-primary transform scale-x-0 transition-transform duration-[400ms] ${onLink ? 'origin-left' : 'origin-right'} group-hover:scale-x-100`}></span>
           </NavLink>
 
           <NavLink
             to="contact"
             className={({ isActive }) =>
-              `text-[18px] transition duration-300 ease-in-out ${isActive ? "underline" : ""}`
+              `text-[14px] transition duration-300 ease-in-out relative group ${isActive && 'font-bold'}`
             }
+            onMouseEnter={() => setOnLink(true)}
+            onMouseLeave={() => setOnLink(false)}
           >
-            Contact
+            <span className="text-primary">03.</span> Contact
+            <span className={`absolute left-0 bottom-0 h-[2px] w-full bg-primary transform scale-x-0 transition-transform duration-[400ms] ${onLink ? 'origin-left' : 'origin-right'} group-hover:scale-x-100`}></span>
           </NavLink>
 
           <label className="inline-flex items-center cursor-pointer">

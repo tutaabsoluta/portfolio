@@ -5,10 +5,10 @@ export const Header = () => {
   return (
     <header className="flex mt-16 z-0">
       {/* Content */}
-      <div className="w-1/2 space-y-6">
+      <div className="w-3/5 space-y-6">
         <h1 className="leading-[60px]">Hello, my name is <span className="text-primary">Sergio.</span></h1>
         <p>
-          I'm an <span className="text-primary font-bold">software developer</span> from San Jose, Costa Rica.
+          I'm a <span className="text-primary font-bold">software developer</span> from San Jose, Costa Rica.
         </p>
         <div className="flex gap-4">
           <Link to="projects">
@@ -21,25 +21,9 @@ export const Header = () => {
         </div>
       </div>
 
-      {/* Images */}
-      <div className="relative w-1/2 -top-32 -right-10">
-        {/* Background Image */}
-        <img src="yellow-bg.png" alt="Background Color" className="w-full" />
-
-        {/* Selfie Image */}
-        <img
-          src="selfie.png"
-          alt="Selfie Image"
-          className="absolute top-0 left-0 w-full h-full"
-          style={{
-            WebkitMaskImage: "url('yellow-bg.png')",
-            WebkitMaskRepeat: "no-repeat",
-            WebkitMaskSize: "cover",
-            maskImage: "url('yellow-bg.png')",
-            maskRepeat: "no-repeat",
-            maskSize: "cover",
-          }}
-        />
+      {/* Image */}
+      <div className="w-2/5">
+          <img src="web.svg" alt="Web Dev Header" />
       </div>
     </header>
   );
