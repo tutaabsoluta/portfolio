@@ -1,6 +1,6 @@
 
 export const ProjectsPage = () => {
   return (
-    <div>ProjectsPage</div>
+    <p className="text-center">ProjectsPage</p>
   )
 }

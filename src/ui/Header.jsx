@@ -6,10 +6,10 @@ export const Header = () => {
     <header className="flex mt-16 z-0">
       {/* Content */}
       <div className="w-3/5 space-y-6">
-        <h1 className="leading-[60px]">
+        <h1 className="leading-[60px] text-white">
           Hello, my name is <span className="text-primary">Sergio.</span>
         </h1>
-        <p>
+        <p className="text-white">
           I'm a{" "}
           <span className="text-primary font-bold">software developer</span>{" "}
           from San Jose, Costa Rica.

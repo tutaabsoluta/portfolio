@@ -22,7 +22,7 @@ export const Navbar = () => {
           <NavLink
             to="about"
             className={({ isActive }) =>
-              `text-[14px] transition duration-300 ease-in-out relative group ${
+              `text-[14px] transition text-white duration-300 ease-in-out relative group ${
                 isActive && "font-bold"
               }`
             }
@@ -40,7 +40,7 @@ export const Navbar = () => {
           <NavLink
             to="projects"
             className={({ isActive }) =>
-              `text-[14px] transition duration-300 ease-in-out relative group ${
+              `text-[14px] transition text-white duration-300 ease-in-out relative group ${
                 isActive && "font-bold"
               }`
             }
@@ -58,7 +58,7 @@ export const Navbar = () => {
           <NavLink
             to="contact"
             className={({ isActive }) =>
-              `text-[14px] transition duration-300 ease-in-out relative group ${
+              `text-[14px] transition text-white duration-300 ease-in-out relative group ${
                 isActive && "font-bold"
               }`
             }

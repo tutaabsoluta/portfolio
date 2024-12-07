@@ -8,12 +8,11 @@ export default {
     extend: {
       fontFamily: [ 'Roboto Slab', 'serif' ],
       colors: {
-        primary: '#4335A7',
+        primary: '#ECB365',
         primaryStrong: '#3323a1',
-        // primary: '#9ABF80',
-        secondary: '#6A669D',
-        neutral: '#F9FAFF',
-        accent: '#1C325B',
+        secondary: '#577B8D',
+        neutral: '#04293A', // bg
+        accent: '#041C32', // footer
       },
     },
   },
