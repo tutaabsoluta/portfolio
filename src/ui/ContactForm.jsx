@@ -20,7 +20,7 @@ export const ContactForm = () => {
         <textarea id="message" rows={5} className="outline outline-1 rounded-lg outline-slate-300"></textarea>
       </div>
 
-      <button className="bg-primary px-6 py-2 rounded-lg font-bold">Send</button>
+      <button className="bg-primary px-6 py-2 rounded-lg font-bold text-white">Send</button>
     </form>
   );
 };

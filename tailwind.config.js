@@ -9,6 +9,7 @@ export default {
       fontFamily: [ 'Roboto Slab', 'serif' ],
       colors: {
         primary: '#4335A7',
+        primaryStrong: '#3323a1',
         // primary: '#9ABF80',
         secondary: '#6A669D',
         neutral: '#F9FAFF',
