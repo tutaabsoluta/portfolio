@@ -5,11 +5,11 @@ export const ProjectCard = ({ name, description, url, link }) => {
     <div className="flex items-center rounded-3xl bg-secondary overflow-hidden">
       {/* Content */}
       <div className="w-1/2 px-12 space-y-12">
-        <h2 className="text-accent">{name}</h2>
+        <h2 className="text-primary">{name}</h2>
         <p className="text-white">{description}</p>
         
         <Link to={ link }>
-          <button className="px-[24px] py-[8px] outline outline-2 rounded-full font-bold mt-8 text-white">
+          <button className="px-[24px] py-[8px] outline outline-2 rounded-full font-bold mt-8 text-terciary">
             View Project
           </button>
         </Link>

@@ -20,7 +20,7 @@ export const AboutPage = () => {
           <div className="relative">
             {/* BG Image */}
             <img
-              src="selfie-bg.png"
+              src="selfie-bg.svg"
               alt="Background Color"
               className="max-w-md"
             />
@@ -31,10 +31,10 @@ export const AboutPage = () => {
               alt="Selfie Image"
               className="absolute top-0 left-0 max-w-md"
               style={{
-                WebkitMaskImage: "url('selfie-bg.png')",
+                WebkitMaskImage: "url('selfie-bg.svg')",
                 WebkitMaskRepeat: "no-repeat",
                 WebkitMaskSize: "cover",
-                maskImage: "url('selfie-bg.png')",
+                maskImage: "url('selfie-bg.svg')",
                 maskRepeat: "no-repeat",
                 maskSize: "cover",
               }}

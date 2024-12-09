@@ -1,13 +1,11 @@
-import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
-import { FaSun, FaMoon } from "react-icons/fa";
+import { Link, NavLink } from "react-router-dom";
+
 
 export const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
+
   const [onLink, setOnLink] = useState(false);
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+
 
   return (
     <nav className="container mx-auto mt-8 relative z-20">
@@ -73,27 +71,7 @@ export const Navbar = () => {
             ></span>
           </NavLink>
 
-          <label className="inline-flex items-center cursor-pointer">
-            <input
-              type="checkbox"
-              className="sr-only peer"
-              checked={darkMode}
-              onChange={toggleDarkMode}
-            />
-            <div className="relative w-10 h-5 bg-gray-200 rounded-full peer-focus:outline-none peer dark:bg-gray-700 peer-checked:bg-slate-600 flex items-center">
-              <span
-                className={`absolute top-1/2 transform -translate-y-1/2 left-1 transition-transform duration-300 ${
-                  darkMode ? "translate-x-6" : "translate-x-0"
-                }`}
-              >
-                {darkMode ? (
-                  <FaMoon className="text-white w-[9px] h-[11px]" />
-                ) : (
-                  <FaSun className="text-white w-[12px] h-[12px]" />
-                )}
-              </span>
-            </div>
-          </label>
+          
         </div>
       </div>
     </nav>

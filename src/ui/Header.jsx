@@ -3,18 +3,21 @@ import { Button } from "../components";
 
 export const Header = () => {
   return (
-    <header className="flex mt-16 z-0">
+    <header className="flex items-center mt-40 justify-center mb-48">
       {/* Content */}
-      <div className="w-3/5 space-y-6">
-        <h1 className="leading-[60px] text-white">
-          Hello, my name is <span className="text-primary">Sergio.</span>
+      <div className="space-y-10 text-center flex flex-col items-center">
+        <h1 className="leading-[80px] text-white">
+          Hello, my name is <span className="text-primary">Sergio Duran.</span>
         </h1>
-        <p className="text-white">
+        <p className="text-white text-xl max-w-md">
           I'm a{" "}
-          <span className="text-primary font-bold">software developer</span>{" "}
-          from San Jose, Costa Rica.
+          <span className="text-primary font-bold text-xl">
+            software developer
+          </span>{" "}
+          from San Jose, Costa Rica, who likes to build web applications and learn new things everyday!
         </p>
-        <div className="flex gap-4">
+
+        <div className="flex gap-4 justify-center">
           <Link to="projects">
             <Button className="bg-primary text-white" text={"Projects"} />
           </Link>
@@ -27,11 +30,6 @@ export const Header = () => {
             <Button className="bg-white outline outline-1" text={"Linkedin"} />
           </a>
         </div>
-      </div>
-
-      {/* Image */}
-      <div className="w-2/5">
-        <img src="web.svg" alt="Web Dev Header" />
       </div>
     </header>
   );
