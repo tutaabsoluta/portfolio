@@ -19,7 +19,7 @@ export const Header = () => {
 
         <div className="flex gap-4 justify-center">
           <Link to="projects">
-            <Button className="bg-primary text-white" text={"Projects"} />
+            <Button className="bg-primary" text={"Resume"} />
           </Link>
 
           <a

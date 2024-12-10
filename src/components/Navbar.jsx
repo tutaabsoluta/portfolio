@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { BsInfoSquare } from "react-icons/bs";
+import { MdOutlineContactPage } from "react-icons/md";
+import { FaLaptopCode } from "react-icons/fa";
+import { IoMdInformationCircleOutline } from "react-icons/io";
+
+
 
 
 export const Navbar = () => {
-
   const [onLink, setOnLink] = useState(false);
-
 
   return (
     <nav className="container mx-auto mt-8 relative z-20">
@@ -27,7 +31,11 @@ export const Navbar = () => {
             onMouseEnter={() => setOnLink(true)}
             onMouseLeave={() => setOnLink(false)}
           >
-            <span className="text-primary">01.</span> About
+            <div className="text-primary flex items-center gap-2">
+              <IoMdInformationCircleOutline />
+              <p className="text-white">About</p>
+            </div>
+
             <span
               className={`absolute left-0 bottom-0 h-[2px] w-full bg-primary transform scale-x-0 transition-transform duration-[400ms] ${
                 onLink ? "origin-left" : "origin-right"
@@ -45,7 +53,10 @@ export const Navbar = () => {
             onMouseEnter={() => setOnLink(true)}
             onMouseLeave={() => setOnLink(false)}
           >
-            <span className="text-primary">02.</span> Projects
+            <div className="text-primary flex items-center gap-2">
+              <FaLaptopCode />
+              <p className="text-white">Projects</p>
+            </div>
             <span
               className={`absolute left-0 bottom-0 h-[2px] w-full bg-primary transform scale-x-0 transition-transform duration-[400ms] ${
                 onLink ? "origin-left" : "origin-right"
@@ -63,15 +74,16 @@ export const Navbar = () => {
             onMouseEnter={() => setOnLink(true)}
             onMouseLeave={() => setOnLink(false)}
           >
-            <span className="text-primary">03.</span> Contact
+            <div className="text-primary flex items-center gap-2">
+              <MdOutlineContactPage />
+              <p className="text-white">Contact</p>
+            </div>
             <span
               className={`absolute left-0 bottom-0 h-[2px] w-full bg-primary transform scale-x-0 transition-transform duration-[400ms] ${
                 onLink ? "origin-left" : "origin-right"
               } group-hover:scale-x-100`}
             ></span>
           </NavLink>
-
-          
         </div>
       </div>
     </nav>

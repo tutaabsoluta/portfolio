@@ -15,7 +15,6 @@ export default {
         accent: '#041C32', // footer,
         terciary:"#C9E9D2"
       },
-
       
     },
   },
