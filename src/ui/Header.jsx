@@ -25,7 +25,7 @@ export const Header = () => {
               <img
                 src="selfie.webp"
                 alt="Selfie Image"
-                className="absolute top-0 left-0 w-full h-full"
+                className="absolute top-0 left-0 w-full h-full "
                 style={{
                   WebkitMaskImage: "url('selfie-bg.svg')",
                   WebkitMaskRepeat: "no-repeat",
