@@ -20,7 +20,7 @@ export const Navbar = () => {
           <NavLink
             to="projects"
             className={({ isActive }) =>
-              `text-[14px] transition text-white duration-300 ease-in-out relative group ${
+              `text-[14px] transition text-terciary duration-300 ease-in-out relative group ${
                 isActive && "font-bold"
               }`
             }
@@ -29,7 +29,7 @@ export const Navbar = () => {
           >
             <div className="text-primary flex items-center gap-2">
               <FaLaptopCode />
-              <p className="text-white">Projects</p>
+              <p className="text-terciary">Projects</p>
             </div>
             <span
               className={`absolute left-0 bottom-0 h-[2px] w-full bg-primary transform scale-x-0 transition-transform duration-[400ms] ${
@@ -40,7 +40,7 @@ export const Navbar = () => {
           <NavLink
             to="about"
             className={({ isActive }) =>
-              `text-[14px] transition text-white duration-300 ease-in-out relative group ${
+              `text-[14px] transition text-terciary duration-300 ease-in-out relative group ${
                 isActive && "font-bold"
               }`
             }
@@ -49,7 +49,7 @@ export const Navbar = () => {
           >
             <div className="text-primary flex items-center gap-2">
               <IoMdInformationCircleOutline />
-              <p className="text-white">About</p>
+              <p className="text-terciary">About</p>
             </div>
 
             <span
@@ -62,7 +62,7 @@ export const Navbar = () => {
           <NavLink
             to="contact"
             className={({ isActive }) =>
-              `text-[14px] transition text-white duration-300 ease-in-out relative group ${
+              `text-[14px] transition text-terciary duration-300 ease-in-out relative group ${
                 isActive && "font-bold"
               }`
             }
@@ -71,7 +71,7 @@ export const Navbar = () => {
           >
             <div className="text-primary flex items-center gap-2">
               <MdOutlineContactPage />
-              <p className="text-white">Contact</p>
+              <p className="text-terciary">Contact</p>
             </div>
             <span
               className={`absolute left-0 bottom-0 h-[2px] w-full bg-primary transform scale-x-0 transition-transform duration-[400ms] ${

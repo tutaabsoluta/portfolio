@@ -1,8 +1,19 @@
-export const Heading = ({ title }) => {
+export const Heading = ({ title1, title2, span }) => {
   return (
-    <div>
-      <h2 className="text-center text-white font-bold tracking-tight">{ title }</h2>
-      <div className="w-[100px] h-[5px] bg-primary container mx-auto rounded-md mt-6 mb-12"></div>
-    </div>
+    <section className="text-terciary mb-3 w-full h-56 flex items-center justify-center">
+      <div
+        className="container mx-auto flex items-center justify-center bg-no-repeat bg-center p-8"
+        style={{
+          backgroundImage: 'url("stripe.svg")',
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="w-[100px] h-[2px] bg-primary rounded-md mr-8"></div>
+        <h2 className="text-center">
+          {title1} <span className="text-primary">{ span }</span> { title2 }
+        </h2>
+        <div className="w-[100px] h-[2px] bg-primary rounded-md ml-8"></div>
+      </div>
+    </section>
   );
 };

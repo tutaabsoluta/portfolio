@@ -18,20 +18,20 @@ export const ProjectCard = ({
         isHovered ? "opacity-100" : "opacity-30"
       }`}
     >
-      <div className="flex flex-col items-center rounded-xl bg-accent overflow-hidden relative max-w-xs outline outline-1 outline-secondary">
+      <div className="flex flex-col rounded-xl bg-accent overflow-hidden relative max-w-xs outline outline-1 outline-secondary">
         {/* Image */}
         <div className="w-full">
           <img
             src={url}
             alt={`${name} project`}
-            className="w-full h-[180px] object-cover"
+            className="w-full h-[160px] object-cover"
           />
         </div>
 
         {/* Content */}
         <div className="px-6 py-3 space-y-6">
           <h3 className="text-primary">{name}</h3>
-          <div className="flex items-center justify-center gap-1">
+          <div className="flex items-center justify-center gap-2">
             {technologies.map((technology, idx) => (
               <Technology
                 key={idx}
@@ -40,20 +40,18 @@ export const ProjectCard = ({
               />
             ))}
           </div>
-          <p className="text-white text-sm">{description}</p>
+          <p className="text-terciary text-sm h-20">{description}</p>
 
           {/* Buttons */}
-
-          {/* Buttons */}
-          <div className="flex justify-center gap-8">
-            <div className="bg-slate-800 text-white px-8 py-2 rounded-md outline outline-1 outline-secondary">
+          <div className="flex justify-center gap-8 pb-2">
+            <div className="bg-slate-800 text-terciary px-8 py-2 rounded-md outline outline-1 outline-secondary/60">
               <a href={link} rel="noopener noreferrer" target="_blank">
                 <button className="flex items-center gap-2">
                   <FaGithub /> Code
                 </button>
               </a>
             </div>
-            <div className="bg-slate-800 text-white px-8 py-2 rounded-md outline outline-1 outline-secondary">
+            <div className="bg-slate-800 text-terciary px-8 py-2 rounded-md outline outline-1 outline-secondary/60">
               <a href={link} rel="noopener noreferrer" target="_blank">
                 <button className="flex items-center gap-2">
                   <FaLink /> Link

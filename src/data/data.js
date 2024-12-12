@@ -5,10 +5,10 @@ export const projects = [
     id: 1,
     title: "Bakery Shop",
     description:
-      "This is a bakery application designed using a Figma template. The app uses React for component-based architecture, Tailwind CSS for responsive and customizable styling, React Router DOM.",
+      "This is a bakery application designed using a Figma template. The app uses React for component-based architecture, Tailwind CSS.",
     technologies: [
     
-      { name: "Tailwind CSS", url: "tailwind.svg" },
+      { name: "Tailwind", url: "tailwind.svg" },
       { name: "React", url: "react.svg" },
       { name: "Figma", url: "figma.svg" },
     ],
@@ -21,7 +21,7 @@ export const projects = [
     description:
       "It allows users to search for specific recipes, explore unique dishes, and view detailed information, including ingredients and preparation steps.",
     technologies: [
-      { name: "Tailwind CSS", url: "tailwind.svg" },
+      { name: "Tailwind", url: "tailwind.svg" },
       { name: "React", url: "react.svg" },
       { name: "Zustand", url: "zustand.svg" },
     ],
@@ -34,7 +34,7 @@ export const projects = [
     description:
       "In this application, you can manage patients through a form and, depending on their status, edit or delete their record. ",
     technologies: [
-      { name: "Tailwind CSS", url: "tailwind.svg" },
+      { name: "Tailwind", url: "tailwind.svg" },
       { name: "React", url: "react.svg" },
       { name: "Zustand", url: "zustand.svg" },
     ],

@@ -3,12 +3,12 @@ import { Button } from "../components";
 
 export const Header = () => {
   return (
-    <header className="flex items-center mt-40 justify-center mb-48">
+    <header className="flex items-center mt-40 justify-center mb-16">
       {/* Content */}
       <div className="space-y-10 text-center flex flex-col items-center">
         <div className="flex items-center gap-8">
           <div>
-            <h1 className="text-white">
+            <h1 className="text-terciary">
               Hello, I'm <span className="text-primary">Sergio Duran</span>
             </h1>
           </div>
@@ -38,7 +38,7 @@ export const Header = () => {
             </div>
           </div>
         </div>
-        <p className="text-white text-xl max-w-md">
+        <p className="text-terciary text-xl max-w-md">
           I'm a{" "}
           <span className="text-primary font-bold text-xl">
             software developer
@@ -49,16 +49,8 @@ export const Header = () => {
 
         <div className="flex gap-4 justify-center">
           <Link to="projects">
-            <Button className="bg-primary" text={"Resume"} />
+            <Button className="bg-primary px-12" text={"Resume"} />
           </Link>
-
-          <a
-            href="https://www.linkedin.com/in/sergio-durán-018071260"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button className="bg-white outline outline-1" text={"Linkedin"} />
-          </a>
         </div>
       </div>
     </header>

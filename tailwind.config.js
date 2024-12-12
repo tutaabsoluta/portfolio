@@ -9,8 +9,8 @@ export default {
       fontFamily: [ 'Roboto Slab', 'serif' ],
       colors: {
         primary: '#BAF99D',
-        primaryStrong: '#3323a1',
-        secondary: '#26437E',
+        secondary: '#1F371C',
+        terciary: '#CBD5E1',
         neutral: '#04293A', // bg 04293A
         accent: '#041C32', // footer,
       },
