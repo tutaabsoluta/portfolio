@@ -6,7 +6,7 @@ export const Projects = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   return (
-    <main className=" grid grid-cols-2 place-items-center gap-y-16">
+    <main className="flex items-center justify-center gap-12">
       {projects.map((project, index) => (
         <div
           key={project.id}

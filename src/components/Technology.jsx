@@ -1,9 +1,12 @@
 
-export const Technology = ({ imageUrl }) => {
+export const Technology = ({ name, url }) => {
+
+
     return (
       <div>
-        <div className="p-3 rounded-full bg-accent outline outline-1">
-          <img src={ imageUrl } alt="Technology" className="w-4 h-4" />
+        <div className="flex items-center justify-center gap-1 px-4 rounded-full  outline outline-1 bg-slate-800">
+          <img src={ url } alt="Technology" className="w-3 h-3" />
+          <p className="text-[10px] text-white">{name}</p>
         </div>
       </div>
     );
