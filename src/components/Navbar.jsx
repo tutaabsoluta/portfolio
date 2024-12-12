@@ -14,6 +14,7 @@ export const Navbar = () => {
           <p className="text-[18px] text-primary/95 hover:text-secondary duration-300 font-bold">
             Sergio Duran
           </p>
+          
         </Link>
 
         <div className="flex gap-12 items-center">

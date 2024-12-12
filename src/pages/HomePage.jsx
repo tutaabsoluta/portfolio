@@ -17,9 +17,21 @@ export const HomePage = () => {
 
       <Heading title1={"A little bit"} span={"about"} title2={"me"} />
 
-      <div className=" mt-24 flex items-center gap-x-96">
-        <div className="space-y-8">
-          <p className="text-2xl leading-relaxed text-terciary">
+      <div className="flex items-center max-w-3xl mx-auto">
+        <div className="space-y-4 max-w-md">
+          <p className="text-sm leading-relaxed text-terciary">
+            I am a software developer with a strong focus on frontend
+            technologies. I am passionate about writing clean, maintainable code
+            and staying up-to-date with the latest trends in frontend
+            development.
+          </p>
+          <p className="text-sm leading-relaxed text-terciary">
+            I am a software developer with a strong focus on frontend
+            technologies. I am passionate about writing clean, maintainable code
+            and staying up-to-date with the latest trends in frontend
+            development.
+          </p>
+          <p className="text-sm leading-relaxed text-terciary">
             I am a software developer with a strong focus on frontend
             technologies. I am passionate about writing clean, maintainable code
             and staying up-to-date with the latest trends in frontend
@@ -27,19 +39,19 @@ export const HomePage = () => {
           </p>
         </div>
 
-        <div className="relative">
+        <div className="relative  mx-auto">
           {/* BG Image */}
           <img
             src="selfie-bg.svg"
             alt="Background Color"
-            className="max-w-md"
+            className="w-full max-w-[16rem] object-contain"
           />
 
           {/* Selfie */}
           <img
             src="selfie.webp"
             alt="Selfie Image"
-            className="absolute top-0 left-0 max-w-md"
+            className="absolute top-0 left-0 w-full max-w-[16rem] object-contain"
             style={{
               WebkitMaskImage: "url('selfie-bg.svg')",
               WebkitMaskRepeat: "no-repeat",
