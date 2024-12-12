@@ -1,16 +1,27 @@
 import React from "react";
-import { ContactForm, Header } from "../ui";
-import { Button, Heading, PitchBanner, Projects } from "../components";
+import { Header } from "../ui";
+import { Heading, Projects } from "../components";
+import { FaEnvelope } from "react-icons/fa";
 
 export const HomePage = () => {
   return (
     <div className="container mx-auto">
       <Header />
 
-      <div className="mt-[-50px] mb-24">
+      <section className="text-white text-3xl mb-36 bg-accent flex items-center justify-center">
+        <h2 className="text-center">Projects</h2>
+        <img src="projects.svg" alt="" className="w-60 h-60" />
+      </section>
+
+      <div className="mb-24">
         <Heading title="Latest projects I have worked on" />
         <Projects />
       </div>
+
+      <section className="text-white text-3xl mb-36 bg-accent flex items-center justify-center">
+        <h2 className="text-center">About</h2>
+        <img src="about.svg" alt="" className="w-60 h-60" />
+      </section>
 
       <div className=" mt-24 flex items-center gap-x-96">
         <div className="space-y-8">
@@ -47,20 +58,24 @@ export const HomePage = () => {
           />
         </div>
       </div>
-
-      {/* <div className="mb-36">
-        <div className="w-3/5">
-          <PitchBanner />
-        </div>
-      </div> */}
-
+      <section className="text-white text-3xl mb-36 bg-accent flex items-center justify-center">
+        <h2 className="text-center">Contact</h2>
+        <img src="contact.svg" alt="" className="w-60 h-60" />
+      </section>
       <div className="mt-36">
         <Heading title="Get in Touch!" />
-        <p className="text-center mb-16 text-white">
+        <p className="text-center mb-8 text-white">
           If you have any questions or a proposal, feel free to send me a
           message!
         </p>
-        <ContactForm />
+        <div className="flex justify-center">
+          <a href="mailto:538ser@gmail.com">
+            <button className="flex items-center gap-2 text-white bg-primary px-20 py-4 rounded-md text-black">
+              Send
+              <FaEnvelope className="text-xl " />
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );

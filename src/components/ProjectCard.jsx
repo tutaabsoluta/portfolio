@@ -33,7 +33,11 @@ export const ProjectCard = ({
           <h3 className="text-primary">{name}</h3>
           <div className="flex items-center justify-center gap-1">
             {technologies.map((technology, idx) => (
-              <Technology key={idx} name={ technology.name } url={ technology.url }  />
+              <Technology
+                key={idx}
+                name={technology.name}
+                url={technology.url}
+              />
             ))}
           </div>
           <p className="text-white text-sm">{description}</p>
@@ -43,16 +47,20 @@ export const ProjectCard = ({
           {/* Buttons */}
           <div className="flex justify-center gap-8">
             <div className="bg-slate-800 text-white px-8 py-2 rounded-md outline outline-1 outline-secondary">
-              <button className="flex items-center gap-2">
-                <FaGithub /> Code
-              </button>
+              <a href={link} rel="noopener noreferrer" target="_blank">
+                <button className="flex items-center gap-2">
+                  <FaGithub /> Code
+                </button>
+              </a>
             </div>
             <div className="bg-slate-800 text-white px-8 py-2 rounded-md outline outline-1 outline-secondary">
-              <button className="flex items-center gap-2">
-                <FaLink /> Link
-              </button>
+              <a href={link} rel="noopener noreferrer" target="_blank">
+                <button className="flex items-center gap-2">
+                  <FaLink /> Link
+                </button>
+              </a>
             </div>
-          </div> 
+          </div>
         </div>
       </div>
     </div>

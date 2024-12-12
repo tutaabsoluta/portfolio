@@ -1,4 +1,4 @@
-import { FaEnvelope, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
@@ -22,10 +22,6 @@ export const Footer = () => {
               rel="noopener noreferrer"
             >
               <FaGithub className="text-xl text-white " />
-            </a>
-
-            <a href="mailto:538ser@gmail.com">
-              <FaEnvelope className="text-xl text-white " />
             </a>
           </div>
         </div>
