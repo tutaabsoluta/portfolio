@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 export const WorkCard = ({ name, description, url, link, technologies }) => {
-  const [hoverStates, setHoverStates] = useState({ link: false, github: false });
+  const [hoverStates, setHoverStates] = useState({
+    link: false,
+    github: false,
+  });
 
   return (
     <motion.div
@@ -39,19 +42,36 @@ export const WorkCard = ({ name, description, url, link, technologies }) => {
 
       {/* Contenido emergente */}
       <div className="absolute inset-0 flex flex-col items-center justify-around p-2 text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+        {/* Título y Descripción */}
+        <div className="flex flex-col items-center">
+          <h3 className="text-2xl font-bold mb-4 text-primary">{name}</h3>
+          {/* Tecnologías */}
+          <div className="flex gap-2 mb-10">
+            {technologies.map((technology, idx) => (
+              <Technology
+                key={idx}
+                name={technology.name}
+                url={technology.url}
+              />
+            ))}
+          </div>
+          <p className="mb-6 text-terciary text-start px-8">{description}</p>
+        </div>
+
         {/* Links */}
         <div className="flex w-full justify-between px-8">
           <a
             href={link}
             onMouseEnter={() => setHoverStates({ ...hoverStates, link: true })}
             onMouseLeave={() => setHoverStates({ ...hoverStates, link: false })}
+            target="_blank"
           >
             <button
-              className={`rounded-full p-3 outline outline-1 outline-primary ${
+              className={`flex items-center gap-2 rounded-xl px-4 py-2 outline outline-1 outline-secondary ${
                 hoverStates.link ? "bg-white text-black" : "bg-black text-white"
               } transition-all duration-500`}
             >
-              <FaLink />
+              <FaLink /> Link
             </button>
           </a>
           <a
@@ -62,28 +82,18 @@ export const WorkCard = ({ name, description, url, link, technologies }) => {
             onMouseLeave={() =>
               setHoverStates({ ...hoverStates, github: false })
             }
+            target="_blank"
           >
             <button
-              className={`rounded-full p-3 outline outline-1 outline-primary ${
-                hoverStates.github ? "bg-white text-black" : "bg-black text-white"
+              className={`flex items-center gap-2 rounded-xl px-4 py-2 outline outline-1 outline-secondary ${
+                hoverStates.github
+                  ? "bg-white text-black"
+                  : "bg-black text-white"
               } transition-all duration-500`}
             >
-              <FaGithub />
+              <FaGithub /> Code
             </button>
           </a>
-        </div>
-
-        {/* Título y Descripción */}
-        <div>
-          <h3 className="text-2xl font-bold mb-4 text-primary">{name}</h3>
-          <p className="mb-6 text-terciary text-start px-8">{description}</p>
-        </div>
-
-        {/* Tecnologías */}
-        <div className="flex gap-2">
-          {technologies.map((technology, idx) => (
-            <Technology key={idx} name={technology.name} url={technology.url} />
-          ))}
         </div>
       </div>
     </motion.div>

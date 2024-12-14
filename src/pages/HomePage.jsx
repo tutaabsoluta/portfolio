@@ -1,17 +1,14 @@
-import {  Header } from "../ui";
+import { Header } from "../ui";
 import { Heading, Projects } from "../components";
-
 
 export const HomePage = () => {
   return (
     <div className="">
       <Header />
 
-
       <div className="bg-terciary p-24">
-      <h2 className="text-center mb-20">Latest projects I have worked on</h2>
-      <Projects />
-
+        <h2 className="text-center mb-20">Latest projects I have worked on</h2>
+        <Projects />
       </div>
 
       <Heading title1={"A little bit"} span={"about"} title2={"me"} />
@@ -33,8 +30,8 @@ export const HomePage = () => {
             <span className="text-primary">script development</span> and {""}
             <span className="text-primary">process automation</span> sparked my
             curiosity about the world of {""}
-           software development, leading
-            me to explore and fully dedicate myself to this exciting career.
+            software development, leading me to explore and fully dedicate
+            myself to this exciting career.
           </p>
           <p className="text-sm leading-relaxed text-terciary">
             I am currently seeking my first professional opportunity in{" "}
@@ -77,9 +74,7 @@ export const HomePage = () => {
         </div>
       </div>
 
-      <div className="mt-36">
-
-      </div>
+      <div className="mt-36"></div>
     </div>
   );
 };
