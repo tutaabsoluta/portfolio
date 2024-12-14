@@ -3,16 +3,15 @@ import { FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
   return (
-    <footer className="mt-12 bg-terciary ">
+    <footer className="pt-12 bg-terciary ">
       <div className="flex flex-col items-center space-y-12 p-20">
         {/* Heading and paragraph */}
 
-          <h2 className=" text-center">Let's Work Together</h2>
-          <p className="mt-8 text-base text-center text-black/70">
-            If you have any questions or a proposal, feel free to send me a
-            message!
-          </p>
-
+        <h2 className=" text-center">Let's Work Together</h2>
+        <p className="mt-8 text-base text-center text-black/70">
+          If you have any questions or a proposal, feel free to send me a
+          message!
+        </p>
 
         {/* Button */}
         <button className="px-4 bg-accent py-2 rounded-md text-terciary">

@@ -67,7 +67,7 @@ export const WorkCard = ({ name, description, url, link, technologies }) => {
             target="_blank"
           >
             <button
-              className={`flex items-center gap-2 rounded-xl px-4 py-2 outline outline-1 outline-secondary ${
+              className={`flex items-center gap-2 rounded-xl px-4 py-2 outline outline-1 outline-accent ${
                 hoverStates.link ? "bg-white text-black" : "bg-black text-white"
               } transition-all duration-500`}
             >
@@ -85,7 +85,7 @@ export const WorkCard = ({ name, description, url, link, technologies }) => {
             target="_blank"
           >
             <button
-              className={`flex items-center gap-2 rounded-xl px-4 py-2 outline outline-1 outline-secondary ${
+              className={`flex items-center gap-2 rounded-xl px-4 py-2 outline outline-1 outline-accent ${
                 hoverStates.github
                   ? "bg-white text-black"
                   : "bg-black text-white"
