@@ -1,42 +1,39 @@
-import { ContactForm, Header } from "../ui";
+import {  Header } from "../ui";
 import { Heading, Projects } from "../components";
-import { FaEnvelope } from "react-icons/fa";
+
 
 export const HomePage = () => {
   return (
-    <div className="container mx-auto">
+    <div className="">
       <Header />
 
-      <Heading
-        title1={"Latest"}
-        span={"projects"}
-        title2={"I have worked on"}
-      />
 
+      <div className="bg-terciary p-24">
+      <h2 className="text-center mb-20">Latest projects I have worked on</h2>
       <Projects />
+
+      </div>
 
       <Heading title1={"A little bit"} span={"about"} title2={"me"} />
 
       <div className="flex items-center max-w-3xl mx-auto">
         <div className="space-y-4 max-w-md">
           <p className="text-sm leading-relaxed text-terciary">
-            Hello, my name is Sergio, and I am a{" "}
-            <span className="text-primary">software developer</span>{" "}
-            specializing in{" "}
-            <span className="text-primary">Frontend development</span>. While my
-            academic background is in agronomy, it was during my research
+            Hello, my name is Sergio, and I am a software developer specializing
+            in <span className="text-primary">Frontend development</span>. While
+            my academic background is in agronomy, it was during my research
             projects, where I used tools like{" "}
             <span className="text-primary">R</span> and{" "}
-            <span className="text-primary">Python</span> for {''}
+            <span className="text-primary">Python</span> for {""}
             <span className="text-primary">statistical analysis</span>, that I
             discovered my interest in programming.
           </p>
           <p className="text-sm leading-relaxed text-terciary">
             These early experiences with{" "}
-            <span className="text-primary">script development</span> and {''}
+            <span className="text-primary">script development</span> and {""}
             <span className="text-primary">process automation</span> sparked my
-            curiosity about the world of {''}
-            <span className="text-primary">software development</span>, leading
+            curiosity about the world of {""}
+           software development, leading
             me to explore and fully dedicate myself to this exciting career.
           </p>
           <p className="text-sm leading-relaxed text-terciary">
@@ -51,9 +48,7 @@ export const HomePage = () => {
             In the meantime, I dedicate my time to creating{" "}
             <span className="text-primary">personal projects</span> that allow
             me to apply and strengthen my knowledge, while also learning new{" "}
-            <span className="text-primary">technologies</span> and{" "}
-            <span className="text-primary">tools</span> to stay up-to-date in
-            the field.
+            technologies tools to stay up-to-date in the field.
           </p>
         </div>
 
@@ -83,12 +78,7 @@ export const HomePage = () => {
       </div>
 
       <div className="mt-36">
-        <Heading title1={"Get in"} span={"touch"} />
-        <p className="text-center mb-8 text-terciary">
-          If you have any questions or a proposal, feel free to send me a
-          message!
-        </p>
-        <ContactForm />
+
       </div>
     </div>
   );

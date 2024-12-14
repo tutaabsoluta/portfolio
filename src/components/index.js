@@ -10,3 +10,4 @@ export * from './ProjectInfo';
 export * from './Projects';
 export * from './SkillCard';
 export * from './Technology';
+export * from './WorkCard';

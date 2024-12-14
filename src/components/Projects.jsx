@@ -1,26 +1,20 @@
-import { useState } from "react";
 import { projects } from "../data/data";
-import { ProjectCard } from "./ProjectCard";
+import { WorkCard } from "./WorkCard";
 
 export const Projects = () => {
-  const [hoveredCard, setHoveredCard] = useState(null);
 
   return (
-    <main className="flex items-center justify-center gap-12">
-      {projects.map((project, index) => (
+    <main className="flex items-center justify-center gap-4">
+      {projects.map((project) => (
         <div
           key={project.id}
-          onMouseEnter={() => setHoveredCard(index)}
-          onMouseLeave={() => setHoveredCard(null)}
         >
-          <ProjectCard
-            index={index}
-            hoveredCard={hoveredCard}
+          <WorkCard
             name={project.title}
             description={project.description}
             url={project.image}
             link={project.link}
-            technologies={ project.technologies }
+            technologies={project.technologies}
           />
         </div>
       ))}

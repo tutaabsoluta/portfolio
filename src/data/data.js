@@ -10,9 +10,11 @@ export const projects = [
     
       { name: "Tailwind", url: "tailwind.svg" },
       { name: "React", url: "react.svg" },
+      { name: "RRD", url: "rrd.svg" },
+      { name: "RHF", url: "rhf.svg" },
       { name: "Figma", url: "figma.svg" },
     ],
-    image: "bakery.png",
+    image: "bakery.jpg",
     link: "https://cc-bakery.netlify.app/",
   },
   {
@@ -23,9 +25,11 @@ export const projects = [
     technologies: [
       { name: "Tailwind", url: "tailwind.svg" },
       { name: "React", url: "react.svg" },
+      { name: "RRD", url: "rrd.svg" },
       { name: "Zustand", url: "zustand.svg" },
+      { name: "Framer", url: "framer.svg" },
     ],
-    image: "recipe.png",
+    image: "recipe.jpg",
     link: "https://tjrecipes.netlify.app/",
   },
   {
@@ -36,9 +40,10 @@ export const projects = [
     technologies: [
       { name: "Tailwind", url: "tailwind.svg" },
       { name: "React", url: "react.svg" },
+      { name: "RHF", url: "rhf.svg" },
       { name: "Zustand", url: "zustand.svg" },
     ],
-    image: "veterinary.png",
+    image: "veterinary.jpg",
     link: "https://patientszustandtta.netlify.app/",
   },
 ];

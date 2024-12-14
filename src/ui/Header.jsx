@@ -3,7 +3,7 @@ import { Button } from "../components";
 
 export const Header = () => {
   return (
-    <header className="flex items-center mt-40 justify-center mb-16">
+    <header className="flex items-center justify-center mb-16 h-screen">
       {/* Content */}
       <div className="space-y-10 text-center flex flex-col items-center">
         <div className="flex items-center gap-8">
