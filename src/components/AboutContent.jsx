@@ -20,10 +20,9 @@ export const AboutContent = () => {
       </p>
       <p className="text-sm leading-relaxed text-terciary">
         In the meantime, I dedicate my time to creating{" "}
-        <span className="text-primary">personal projects</span> that allow me to
-        apply and strengthen my knowledge, while also learning new technologies
-        tools to stay up-to-date in the field.
+        <span className="text-primary">personal projects</span> and also I've been learning <span className="text-primary">TypeScript, NodeJS and Figma</span> on my own.
       </p>
+      
     </div>
   );
 };

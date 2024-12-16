@@ -13,7 +13,7 @@ export const Selfie = () => {
     <img
       src="selfie.webp"
       alt="Selfie Image"
-      className="absolute top-0 left-0 w-full max-w-[16rem] object-contain"
+      className="absolute top-0 left-0 w-full max-w-[16rem] object-contain graysca"
       style={{
         WebkitMaskImage: "url('selfie-bg.svg')",
         WebkitMaskRepeat: "no-repeat",

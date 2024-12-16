@@ -114,7 +114,7 @@ export const learningSkills = [
 export const otherSkills = [
   {
     id: 1,
-    title: "Spanish: Native",
+    title: "Spanish",
     image: "spanish.svg",
   },
   {
