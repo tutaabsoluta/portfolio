@@ -3,7 +3,7 @@ import { Button } from "../components";
 
 export const Header = () => {
   return (
-    <header className="flex items-center justify-center mb-16 h-screen">
+    <header className="flex items-center justify-center mb-16 h-screen ">
       {/* Content */}
       <div className="space-y-10 text-center flex flex-col items-center">
         <div className="flex items-center gap-8">
@@ -49,7 +49,7 @@ export const Header = () => {
 
         <div className="flex gap-4 justify-center">
           <Link to="projects">
-            <Button className="bg-primary px-12" text={"Resume"} />
+            <Button className="outline outline-2 outline-primary px-12 text-primary" text={"Resume"} />
           </Link>
         </div>
       </div>

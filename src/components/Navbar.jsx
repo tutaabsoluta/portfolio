@@ -8,7 +8,7 @@ export const Navbar = () => {
   const [onLink, setOnLink] = useState(false);
 
   return (
-    <nav className="container mx-auto mt-8 relative z-20">
+    <nav className="w-full mx-auto p-5 relative z-20 border-b border-slate-800">
       <div className="flex justify-between items-center">
         <Link to="/">
           <p className="text-[18px] text-primary/95 hover:text-secondary duration-300 font-bold">
