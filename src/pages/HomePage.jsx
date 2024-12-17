@@ -16,15 +16,8 @@ export const HomePage = () => {
         <Projects />
       </div>
 
-      <div>
-        <Heading title1={"About"} span={"me"} />
-        <AboutInfo />
-      </div>
 
-      <div className="p-12 bg-terciary">
-      <Heading title1={"My"} span={"skills"} />
-      <Skills />
-      </div>
+        <AboutInfo />
 
     </div>
   );

@@ -1,5 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { ContactForm } from "./ContactForm";
 
 export const Footer = () => {
   return (
@@ -13,10 +14,12 @@ export const Footer = () => {
           message!
         </p>
 
+        <ContactForm />
+
         {/* Button */}
-        <button className="px-4 bg-accent py-2 rounded-md text-terciary">
+        {/* <button className="px-4 bg-accent py-2 rounded-md text-terciary">
           Get in touch
-        </button>
+        </button> */}
       </div>
 
       <div className="flex items-center justify-around gap-24 bg-slate-400 w-full p-2">

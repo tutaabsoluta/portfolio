@@ -1,28 +1,34 @@
-
 export const Selfie = () => {
   return (
-    <div className="relative">
-    {/* BG Image */}
-    <img
-      src="selfie-bg.svg"
-      alt="Background Color"
-      className="w-full max-w-[16rem] object-contain"
-    />
+    <div className="relative group">
+      {/* BG Image */}
+      <img
+        src="shape.svg"
+        alt="Background Color"
+        className="w-full max-w-[18rem] object-contain overflow-hidden"
+      />
 
-    {/* Selfie */}
-    <img
-      src="selfie.webp"
-      alt="Selfie Image"
-      className="absolute top-0 left-0 w-full max-w-[16rem] object-contain graysca"
-      style={{
-        WebkitMaskImage: "url('selfie-bg.svg')",
-        WebkitMaskRepeat: "no-repeat",
-        WebkitMaskSize: "cover",
-        maskImage: "url('selfie-bg.svg')",
-        maskRepeat: "no-repeat",
-        maskSize: "cover",
-      }}
-    />
-  </div>
-  )
-}
+      {/* Shape3 (Imagen que aparece al hacer hover) */}
+      <img
+        src="shape4.svg"
+        alt="Shape 3"
+        className="absolute top-0 left-0 w-full max-w-[18rem] object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"
+      />
+
+      {/* Selfie */}
+      <img
+        src="selfie.webp"
+        alt="Selfie Image"
+        className="absolute top-0 left-0 w-full max-w-[18rem] object-contain z-20"
+        style={{
+          WebkitMaskImage: "url('shape.svg')",
+          WebkitMaskRepeat: "no-repeat",
+          WebkitMaskSize: "cover",
+          maskImage: "url('shape2.svg')",
+          maskRepeat: "no-repeat",
+          maskSize: "cover",
+        }}
+      />
+    </div>
+  );
+};
