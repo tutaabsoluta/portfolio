@@ -1,11 +1,10 @@
-import { div } from "framer-motion/client";
 import { AboutContent, Selfie } from "../components";
 
 export const AboutInfo = () => {
   return (
     <div>
 
-      <h3 className="text-primary mb-4 uppercase tracking-wider text-sm text-center mt-12">{`/ About me`}</h3>
+      <h3 className="text-optional mb-4 uppercase tracking-wider text-sm text-center mt-12">{`/ About me`}</h3>
       <h2 className="text-terciary text-center leading-normal">A little bit about me</h2>
 
       <div className="relative w-full h-full">

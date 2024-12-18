@@ -2,6 +2,7 @@ import { FaGithub, FaLink, FaEye } from "react-icons/fa";
 import { Technology } from "./Technology";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Button } from "./Button";
 
 export const WorkCard = ({ name, description, url, link, technologies }) => {
   const [hoverStates, setHoverStates] = useState({
@@ -60,7 +61,9 @@ export const WorkCard = ({ name, description, url, link, technologies }) => {
 
         {/* Links */}
         <div className="flex w-full justify-between px-8">
-          <a
+        <Button text={'Link'}/>
+        <Button text={'Code'}/>
+          {/* <a
             href={link}
             onMouseEnter={() => setHoverStates({ ...hoverStates, link: true })}
             onMouseLeave={() => setHoverStates({ ...hoverStates, link: false })}
@@ -93,7 +96,7 @@ export const WorkCard = ({ name, description, url, link, technologies }) => {
             >
               <FaGithub /> Code
             </button>
-          </a>
+          </a> */}
         </div>
       </div>
     </motion.div>

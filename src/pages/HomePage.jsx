@@ -7,7 +7,7 @@ export const HomePage = () => {
       <Header />
 
       <div className="bg-slate-800 p-24 flex flex-col items-center">
-        <h3 className="text-primary mb-4 uppercase tracking-wider text-sm">
+        <h3 className="text-optional mb-4 uppercase tracking-wider text-sm">
           {`/ My work`}
         </h3>
         <h2 className="text-center mb-8 text-terciary">Latest projects I have worked on</h2>

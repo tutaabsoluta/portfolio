@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer className="pt-12 bg-slate-800 ">
       <div className="flex flex-col items-center space-y-12 p-20">
         {/* Heading and paragraph */}
-        <h3 className="text-primary mb-4 uppercase tracking-wider text-sm">
+        <h3 className="text-optional mb-4 uppercase tracking-wider text-sm">
           {`/ Get in touch`}
         </h3>
         <h2 className=" text-center text-terciary">Let's Work Together</h2>
