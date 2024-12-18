@@ -10,12 +10,9 @@ export const Navbar = () => {
   return (
     <nav className="w-full mx-auto p-5 relative z-20 border-b border-slate-800">
       <div className="flex justify-between items-center">
-        <Link to="/">
-          <p className="text-[18px] text-primary/95 hover:text-secondary duration-300 font-bold">
-            Sergio Duran
-          </p>
-          
-        </Link>
+          <a href="#">
+            <img src="logo2.png" alt="" className="h-20 w-full" />
+          </a>
 
         <div className="flex gap-12 items-center">
           <NavLink

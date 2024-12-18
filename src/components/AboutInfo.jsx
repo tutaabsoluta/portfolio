@@ -9,12 +9,12 @@ export const AboutInfo = () => {
 
       <div className="relative w-full h-full">
         <div className="relative z-10 flex items-center justify-center gap-8 pb-12">
-          <div className="w-3/5">
+          <div className="w-2/5">
             <div className="flex flex-col mb-8"></div>
             <AboutContent />
           </div>
 
-          <div className="">
+          <div>
             <Selfie />
           </div>
         </div>
