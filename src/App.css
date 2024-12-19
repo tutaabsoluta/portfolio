@@ -38,4 +38,8 @@ body {
   }
 
   
-  
+  .vertical-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 12px;
+  }

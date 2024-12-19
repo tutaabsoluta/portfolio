@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
 import { Button } from "../components";
 
 export const Header = () => {
   return (
-    <header className="flex items-center justify-center mb-16 h-screen ">
+    <header className="relative flex items-center justify-center h-screen -mt-20">
       {/* Content */}
       <div className="space-y-10 text-center flex flex-col items-center">
         <div className="flex items-center gap-8">
@@ -11,31 +10,6 @@ export const Header = () => {
             <h1 className="text-terciary">
               Hello, I'm <span className="text-primary">Sergio Duran</span>
             </h1>
-          </div>
-          <div>
-            <div className="relative w-20 h-20">
-              {/* BG Image */}
-              <img
-                src="selfie-bg.svg"
-                alt="Background Color"
-                className="absolute top-0 left-0 w-full h-full"
-              />
-
-              {/* Selfie */}
-              <img
-                src="selfie.webp"
-                alt="Selfie Image"
-                className="absolute top-0 left-0 w-full h-full "
-                style={{
-                  WebkitMaskImage: "url('selfie-bg.svg')",
-                  WebkitMaskRepeat: "no-repeat",
-                  WebkitMaskSize: "cover",
-                  maskImage: "url('selfie-bg.svg')",
-                  maskRepeat: "no-repeat",
-                  maskSize: "cover",
-                }}
-              />
-            </div>
           </div>
         </div>
         <p className="text-terciary text-xl max-w-md">
@@ -48,8 +22,21 @@ export const Header = () => {
         </p>
 
         <div className="flex gap-4 justify-center">
-          <Button text={`Let's talk!`}/>
+          <Button text={`Let's talk!`} />
         </div>
+      </div>
+      <div className="flex items-center justify-center relative">
+        <p className="left-6 fixed text-slate-500 vertical-text">
+          © 2024 Sergio Duran - Almost all rights reserved.
+          <div className="w-6 h-[1px] bg-slate-500 transform rotate-90 absolute right-0 -top-4"></div>
+        </p>
+      </div>
+
+      <div className="flex items-center gap-2 absolute right-4 bottom-24">
+        <p className="text-slate-500 uppercase text-[10px]">Scroll down</p>
+        <button className="bg-accent p-2 rounded-full">
+          <img src="downarrow.svg" alt="" className="w-6 h-6" />
+        </button>
       </div>
     </header>
   );

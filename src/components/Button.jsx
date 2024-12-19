@@ -1,13 +1,11 @@
 export const Button = ({ text }) => {
   return (
-    <a
-      href="#_"
-      class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300  rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-terciary hover:ring-offset-indigo-500 ease focus:outline-none"
-    >
-      <span class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-terciary opacity-10 group-hover:translate-x-0"></span>
-      <span class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-terciary opacity-10 group-hover:translate-x-0"></span>
-      <span class="relative z-20 flex items-center text-sm">{ text }</span>
-    </a>
+<a href="#_" class="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-2xl group">
+    <span class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-primary opacity-[3%]"></span>
+    <span class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-primary opacity-100 group-hover:-translate-x-8"></span>
+    <span class="relative w-full text-left text-terciary transition-colors duration-200 ease-in-out group-hover:text-accent">{ text }</span>
+    <span class="absolute inset-0 border-[3px] border-primary rounded-2xl"></span>
+</a>
   );
 };
 1;

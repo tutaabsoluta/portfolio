@@ -1,10 +1,10 @@
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
+
 import { ContactForm } from "./ContactForm";
 
 export const Footer = () => {
   return (
-    <footer className="pt-12 bg-slate-800 ">
+    <footer className="pt-12 relative">
       <div className="flex flex-col items-center space-y-12 p-20">
         {/* Heading and paragraph */}
         <h3 className="text-optional mb-4 uppercase tracking-wider text-sm">
@@ -17,35 +17,15 @@ export const Footer = () => {
         </p>
 
         <ContactForm />
-
-        {/* Button */}
-        {/* <button className="px-4 bg-accent py-2 rounded-md text-terciary">
-          Get in touch
-        </button> */}
       </div>
 
-      <div className="flex items-center justify-around gap-24 bg-slate-900 w-full p-2">
-        {/* Copyright */}
-        <p className="text-sm text-terciary">
-          Copyright © 2024 Sergio Duran - Almost all rights reserved
-        </p>
-        {/* Socials */}
-        <div className="flex space-x-4">
-          <a
-            href="https://www.linkedin.com/in/sergio-dur%C3%A1n-018071260/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin className="text-xl text-terciary" />
-          </a>
-          <a
-            href="https://github.com/tutaabsoluta"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub className="text-xl text-terciary" />
-          </a>
-        </div>
+      <div className="flex flex-col items-center absolute right-7 bottom-36">
+        <button className="bg-accent p-2 rounded-full mb-2 ml-1">
+          {/* <MdOutlineKeyboardDoubleArrowUp className="text-terciary" /> */}
+          <img src="arrow.svg" alt="" className="w-6 h-6" />
+        </button>
+        <p className="text-slate-500 vertical-text">Go to the top</p>
+        <div className="w-6 h-[1px] bg-slate-500 transform rotate-90 relative right-0 -bottom-8"></div>
       </div>
     </footer>
   );

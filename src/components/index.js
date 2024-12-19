@@ -10,5 +10,6 @@ export * from './Projects';
 export * from './Selfie';
 export * from './Skills';
 export * from './SkillCard';
+export * from './Socials';
 export * from './Technology';
 export * from './WorkCard';
