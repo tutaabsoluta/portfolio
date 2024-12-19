@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import { Button } from "../components";
+import { IoIosArrowDown } from "react-icons/io";
 
 export const Header = () => {
   return (
@@ -17,8 +19,7 @@ export const Header = () => {
           <span className="text-primary font-bold text-xl">
             software developer
           </span>{" "}
-          from San Jose, Costa Rica, who likes to build web applications and
-          learn new things everyday!
+          from San Jose, Costa Rica that loves coding!
         </p>
 
         <div className="flex gap-4 justify-center">
@@ -32,10 +33,12 @@ export const Header = () => {
         </p>
       </div>
 
-      <div className="flex items-center gap-2 absolute right-4 bottom-24">
-        <p className="text-slate-500 uppercase text-[10px]">Scroll down</p>
-        <button className="bg-accent p-2 rounded-full">
-          <img src="downarrow.svg" alt="" className="w-6 h-6" />
+      <div className="flex items-center gap-2 absolute right-24 bottom-24">
+        <button className="flex items-center gap-2 group">
+          <IoIosArrowDown className="text-terciary group-hover:scale-150 transition-transform duration-500" />
+          <span className="text-terciary uppercase text-[10px] tracking-widest">
+            Scroll down
+          </span>
         </button>
       </div>
     </header>

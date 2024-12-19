@@ -3,6 +3,7 @@
 export * from './AboutContent';
 export * from './AboutInfo';
 export * from './Button';
+export * from './DivisionLine';
 export * from './Heading';
 export * from './Navbar';
 export * from './ProjectInfo';

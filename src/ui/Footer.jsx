@@ -1,31 +1,30 @@
-import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
+import { IoIosArrowUp } from "react-icons/io";
 
 import { ContactForm } from "./ContactForm";
 
 export const Footer = () => {
   return (
-    <footer className="pt-12 relative">
-      <div className="flex flex-col items-center space-y-12 p-20">
+    <footer className="relative">
+      <div className="flex flex-col items-center space-y-8 p-20">
         {/* Heading and paragraph */}
-        <h3 className="text-optional mb-4 uppercase tracking-wider text-sm">
+        <h3 className="text-optional uppercase tracking-wider text-sm">
           {`/ Get in touch`}
         </h3>
-        <h2 className=" text-center text-terciary">Let's Work Together</h2>
+        <h2 className="text-center text-terciary">I'd Love to Hear from You!</h2>
         <p className="mt-8 text-base text-center text-terciary">
-          If you have any questions or a proposal, feel free to send me a
-          message!
+          Do you have a project or an opportunity in mind?  <br />
+          Don't hesitate to reach out!
         </p>
 
         <ContactForm />
       </div>
 
       <div className="flex flex-col items-center absolute right-7 bottom-36">
-        <button className="bg-accent p-2 rounded-full mb-2 ml-1">
-          {/* <MdOutlineKeyboardDoubleArrowUp className="text-terciary" /> */}
-          <img src="arrow.svg" alt="" className="w-6 h-6" />
+        <button className="mb-2 ml-1 p-[2px] rounded-full bg-terciary hover:scale-125 transition-transform duration-300">
+          <IoIosArrowUp className="text-accent" />
         </button>
-        <p className="text-slate-500 vertical-text">Go to the top</p>
-        <div className="w-6 h-[1px] bg-slate-500 transform rotate-90 relative right-0 -bottom-8"></div>
+        <p className="text-terciary vertical-text cursor-default">Go to the top</p>
+        <div className="w-6 h-[1px] bg-terciary transform rotate-90 relative right-0 -bottom-8"></div>
       </div>
     </footer>
   );

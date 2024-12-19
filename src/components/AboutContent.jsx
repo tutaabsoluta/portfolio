@@ -1,6 +1,6 @@
 export const AboutContent = () => {
   return (
-    <div className="space-y-4 bg-slate-800 rounded-3xl p-8 outline outline-1 outline-slate-700 shadow-lg">
+    <div className="space-y-4">
       <h3 className="text-primary">Hello!</h3>
       <p className="text-md leading-relaxed text-terciary">
         My name is Sergio, and I am a software developer specializing in{" "}
