@@ -3,7 +3,7 @@ export const Navbar = () => {
     <nav className="w-full mx-auto p-5 relative z-20">
       <div className="flex justify-between items-center">
         <a href="#">
-          <img src="logo2.png" alt="" className="h-20 w-full" />
+          <img src="logo.png" alt="" className="h-20 w-full" />
         </a>
 
         <div>

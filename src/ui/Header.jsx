@@ -10,7 +10,7 @@ export const Header = () => {
         <div className="flex items-center gap-8">
           <div>
             <h1 className="text-terciary">
-              Hello, I'm <span className="text-primary">Sergio Duran</span>
+              Hello, I'm <span className="font-bold text-primary">Sergio Duran</span>
             </h1>
           </div>
         </div>
@@ -35,8 +35,8 @@ export const Header = () => {
 
       <div className="flex items-center gap-2 absolute right-24 bottom-24">
         <button className="flex items-center gap-2 group">
-          <IoIosArrowDown className="text-terciary group-hover:scale-150 transition-transform duration-500" />
-          <span className="text-terciary uppercase text-[10px] tracking-widest">
+          <IoIosArrowDown className="text-terciary group-hover:scale-125 group-hover:text-primary transition-transform duration-500" />
+          <span className="text-terciary uppercase text-[10px] tracking-widest group-hover:text-primary transition-transform duration-500">
             Scroll down
           </span>
         </button>
