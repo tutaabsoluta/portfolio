@@ -1,20 +1,19 @@
 import { projects } from "../data/data";
-import { WorkCard } from "./WorkCard";
+import { GlassCard } from "./GlassCard";
 
 export const Projects = () => {
 
   return (
-    <main className="flex items-center justify-center gap-4">
+    <main className="flex items-center justify-center gap-8">
       {projects.map((project) => (
         <div
           key={project.id}
         >
-          <WorkCard
-            name={project.title}
-            description={project.description}
-            url={project.image}
-            link={project.link}
-            technologies={project.technologies}
+          <GlassCard 
+            description={ project.description }
+            title={ project.title }
+            imageUrl={ project.image }
+            technologies={ project.technologies } 
           />
         </div>
       ))}

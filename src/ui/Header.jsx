@@ -35,8 +35,8 @@ export const Header = () => {
 
       <div className="flex items-center gap-2 absolute right-24 bottom-24">
         <button className="flex items-center gap-2 group">
-          <IoIosArrowDown className="text-terciary group-hover:scale-125 group-hover:text-primary transition-transform duration-500" />
-          <span className="text-terciary uppercase text-[10px] tracking-widest group-hover:text-primary transition-transform duration-500">
+          <IoIosArrowDown className="text-terciary group-hover:scale-125 group-hover:text-primary transition-all duration-500" />
+          <span className="text-terciary uppercase text-[10px] tracking-widest group-hover:text-primary transition-colors duration-500">
             Scroll down
           </span>
         </button>

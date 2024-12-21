@@ -5,7 +5,7 @@ import { ContactForm } from "./ContactForm";
 export const Footer = () => {
   return (
     <footer className="relative">
-      <div className="flex flex-col items-center space-y-8 p-20">
+      <div className="flex flex-col items-center space-y-8 py-24">
         {/* Heading and paragraph */}
         <h3 className="text-optional uppercase tracking-wider text-sm">
           {`/ Get in touch`}

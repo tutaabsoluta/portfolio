@@ -1,10 +1,11 @@
-export const Technology = ({ name, url }) => {
+export const Technology = ({ imageUrl, title }) => {
   return (
-    <div className="relative inline-flex h-7 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-      <span className="absolute inset-[-1000%] animate-[spin_5s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#cbffe7_0%,#39b26f_50%,#cbffdf_100%)]" />
-      <span className="inline-flex h-full w-full items-center justify-center rounded-full bg-black px-3 py-1 text-xs font-medium text-emerald-100 backdrop-blur-3xl">
-        {name}
-      </span>
-    </div>
+    <div className="bg-optional/5 rounded-full h-6 w-6 flex items-center justify-center outline outline-1 outline-slate-600 group-hover:bg-optional/10 transition-all duration-300">
+    <img
+      src={ imageUrl } 
+      alt={ title }
+      className="w-4 h-4 grayscale group-hover:grayscale-0 transition-all duration-300"
+    />
+  </div>
   );
 };

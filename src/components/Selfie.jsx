@@ -9,11 +9,11 @@ export const Selfie = () => {
       />
 
       {/* Shape3 (Imagen que aparece al hacer hover) */}
-      <img
+      {/* <img
         src="shape5.svg"
         alt="Shape 3"
         className="absolute top-0 left-0 w-full max-w-[18rem] object-contain hidden group-hover:block ease-in-out duration-500 z-10"
-      />
+      /> */}
 
       {/* Selfie */}
       <img

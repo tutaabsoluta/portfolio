@@ -2,7 +2,7 @@ import { Button } from "../components";
 
 export const ContactForm = () => {
   return (
-    <form className="md:w-[600px] 2xl:w-[700px] mx-auto mb-28">
+    <form className="md:w-[600px] 2xl:w-[700px] mx-auto">
       {/* Grid para Nombre y Correo */}
       <div className="grid grid-cols-2 gap-4 mb-5">
         {/* Name Field */}
