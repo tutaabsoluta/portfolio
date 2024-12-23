@@ -1,4 +1,4 @@
-import { AboutContent, Selfie } from "../components";
+import { AboutContent, Selfie } from "../about";
 
 export const AboutInfo = () => {
   return (

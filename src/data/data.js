@@ -5,7 +5,7 @@ export const projects = [
     id: 1,
     title: "Bakery Shop",
     description:
-      "This is a bakery application designed using a Figma template. The app uses React for component-based architecture, Tailwind CSS.",
+      "This is a bakery application coded from a Figma template. The app uses React for component-based architecture, Tailwind CSS.",
     technologies: [
     
       { name: "Tailwind", url: "tailwind.svg" },
@@ -13,7 +13,10 @@ export const projects = [
       { name: "Figma", url: "figma.svg" },
     ],
     image: "bakery.png",
-    link: "https://cc-bakery.netlify.app/",
+    links: {
+      project: "https://cc-bakery.netlify.app/",
+      github: "https://github.com/tutaabsoluta/cc-bakery"
+     },
   },
   {
     id: 2,
@@ -27,7 +30,10 @@ export const projects = [
 
     ],
     image: "recipe.png",
-    link: "https://tjrecipes.netlify.app/",
+    links: {
+      project: "https://tjrecipes.netlify.app/",
+      github: "https://github.com/tutaabsoluta/tj-recipes",
+     },
   },
   {
     id: 3,
@@ -40,7 +46,10 @@ export const projects = [
       { name: "Zustand", url: "zustand.svg" },
     ],
     image: "patients.png",
-    link: "https://patientszustandtta.netlify.app/",
+    links: {
+      project: "https://patientszustandtta.netlify.app/",
+      github: "https://github.com/tutaabsoluta/patients-zustand",
+     },
   },
 ];
 

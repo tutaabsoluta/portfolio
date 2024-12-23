@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import { Button } from "../components";
+import { Button } from "..";
 import { IoIosArrowDown } from "react-icons/io";
 
 export const Header = () => {

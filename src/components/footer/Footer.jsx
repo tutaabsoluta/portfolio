@@ -1,6 +1,6 @@
+import { ContactForm } from "../footer/ContactForm";
 import { IoIosArrowUp } from "react-icons/io";
 
-import { ContactForm } from "./ContactForm";
 
 export const Footer = () => {
   return (
