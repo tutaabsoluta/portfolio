@@ -12,7 +12,7 @@ export const projects = [
       { name: "React", url: "react.svg" },
       { name: "Figma", url: "figma.svg" },
     ],
-    image: "bakery.jpg",
+    image: "bakery.png",
     link: "https://cc-bakery.netlify.app/",
   },
   {
@@ -26,7 +26,7 @@ export const projects = [
       { name: "Zustand", url: "zustand.svg" },
 
     ],
-    image: "recipe.jpg",
+    image: "recipe.png",
     link: "https://tjrecipes.netlify.app/",
   },
   {
@@ -39,7 +39,7 @@ export const projects = [
       { name: "React", url: "react.svg" },
       { name: "Zustand", url: "zustand.svg" },
     ],
-    image: "veterinary.jpg",
+    image: "patients.png",
     link: "https://patientszustandtta.netlify.app/",
   },
 ];
