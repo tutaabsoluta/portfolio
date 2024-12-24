@@ -10,12 +10,12 @@ export const GlassCard = ({
   links,
 }) => {
   return (
-    <div class="group">
-      <div class="flex flex-col justify-evenly gap-4 bg-optional/5 hover:bg-optional/10 backdrop-blur-xl rounded-xl border border-white/20 max-w-72 h-auto relative transition-all duration-300">
+    <div className="group">
+      <div className="flex flex-col justify-evenly gap-4 bg-optional/5 hover:bg-optional/10 backdrop-blur-xl rounded-xl border border-white/20 max-w-72 h-auto relative transition-all duration-300">
         <div className="space-y-5 p-4">
           <div className="flex items-center gap-2">
             {technologies.map((technology) => (
-              <Technology imageUrl={technology.url} />
+              <Technology imageUrl={technology.url} key={technology.name} />
             ))}
           </div>
 

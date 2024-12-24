@@ -3,13 +3,17 @@ import { IoIosArrowDown } from "react-icons/io";
 
 export const Header = () => {
   return (
-    <header className="relative flex items-center justify-center h-screen -mt-20">
+    <header
+      className="relative flex items-center justify-center h-screen -mt-20"
+      id="header"
+    >
       {/* Content */}
       <div className="space-y-10 text-center flex flex-col items-center">
         <div className="flex items-center gap-8">
           <div>
             <h1 className="text-terciary">
-              Hello, I'm <span className="font-bold text-primary">Sergio Duran</span>
+              Hello, I'm{" "}
+              <span className="font-bold text-primary">Sergio Duran</span>
             </h1>
           </div>
         </div>
@@ -33,12 +37,14 @@ export const Header = () => {
       </div>
 
       <div className="flex items-center gap-2 absolute right-24 bottom-24">
-        <button className="flex items-center gap-2 group">
-          <IoIosArrowDown className="text-terciary group-hover:scale-125 group-hover:text-primary transition-all duration-500" />
-          <span className="text-terciary uppercase text-[10px] tracking-widest group-hover:text-primary transition-colors duration-500">
-            Scroll down
-          </span>
-        </button>
+        <a href="#projects">
+          <button className="flex items-center gap-2 group">
+            <IoIosArrowDown className="text-terciary group-hover:scale-125 group-hover:text-primary transition-all duration-500" />
+            <span className="text-terciary uppercase text-[10px] tracking-widest group-hover:text-primary transition-colors duration-500">
+              Scroll down
+            </span>
+          </button>
+        </a>
       </div>
     </header>
   );
