@@ -1,6 +1,6 @@
 
-export const DivisionLine = () => {
+export const DivisionLine = ({ className }) => {
   return (
-    <div className="w-[1100px] h-[1px] mx-auto bg-primary opacity-15"></div>
+    <div className={`${className} h-[1px] bg-primary opacity-15`}></div>
   );
 };

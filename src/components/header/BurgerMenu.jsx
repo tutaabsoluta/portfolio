@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
-import { Socials } from "../utils/";
+import { DivisionLine, Socials } from "../utils/";
 
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,55 +40,57 @@ export const BurgerMenu = () => {
         <div
           className={`${
             isOpen
-              ? "fixed top-0 right-0 min-w-56  h-screen bg-white dark:bg-secondary z-50"
+              ? "fixed top-0 right-0 min-w-56 h-screen bg-white dark:bg-secondary z-50"
               : "hidden"
           }`}
         >
           <div className="flex items-center justify-center gap-16 mt-12">
-            <h3 className="uppercase text-xs tracking-widest text-primary">Navigation</h3>
-            <button
-              className="text-terciary "
-              onClick={onToggle}
-            >
+            <h3 className="uppercase text-xs tracking-widest text-primary">
+              Navigation
+            </h3>
+            <button className="text-white" onClick={onToggle}>
               <IoCloseSharp />
             </button>
           </div>
-          <ul className="font-medium flex flex-col items-center justify-center h-full space-y-4">
+          <ul className="font-medium flex flex-col items-start justify-center h-full space-y-6 ml-8 -mt-8">
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-primary"
+                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-terciary md:dark:hover:text-optional hover:scale-105 transition-all duration-300 uppercase text-xs tracking-widest"
                 aria-current="page"
               >
                 Home
               </a>
             </li>
+            <DivisionLine className={"w-[85%]"} />
             <li>
               <a
                 href="#work"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-primary dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-terciary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-terciary md:dark:hover:text-optional hover:scale-105 transition-all duration-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase text-xs tracking-widest"
               >
                 Work
               </a>
             </li>
+            <DivisionLine className={"w-[85%]"} />
             <li>
               <a
                 href="#about"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-primary dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-terciary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-terciary md:dark:hover:text-optional hover:scale-105 transition-all duration-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase text-xs tracking-widest"
               >
                 About
               </a>
             </li>
-
+            <DivisionLine className={"w-[85%]"} />
             <li>
               <a
                 href="#contact"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-primary dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-terciary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-terciary md:dark:hover:text-optional hover:scale-105 transition-all duration-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase text-xs tracking-widest"
               >
                 Contact
               </a>
             </li>
-          <Socials />
+            <DivisionLine className={"w-[85%]"} />
+            <Socials />
           </ul>
         </div>
       </div>

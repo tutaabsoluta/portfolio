@@ -11,11 +11,11 @@ function App() {
     <>
       <Navbar />
       <Header />
-      <DivisionLine />
+      <DivisionLine className={'w-[1100px] mx-auto'} />
       <Projects />
-      <DivisionLine />
+      <DivisionLine className={'w-[1100px] mx-auto'} />
       <AboutInfo />
-      <DivisionLine />
+      <DivisionLine className={'w-[1100px] mx-auto'} />
       <Footer />
     </>
   );
