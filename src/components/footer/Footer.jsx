@@ -3,7 +3,7 @@ import { IoIosArrowUp } from "react-icons/io";
 
 export const Footer = () => {
   return (
-    <footer className="relative" id="footer">
+    <footer className="relative" id="contact">
       <div className="flex flex-col items-center space-y-8 py-24">
         {/* Heading and paragraph */}
         <h3 className="text-optional uppercase tracking-wider text-sm">
@@ -21,7 +21,7 @@ export const Footer = () => {
       </div>
 
       <div className="flex flex-col items-center absolute right-7 bottom-36 group">
-        <a href="#header">
+        <a href="#">
           <button className="flex flex-col items-center ">
             <IoIosArrowUp className="text-terciary group-hover:text-primary transition-all duration-500 group-hover:scale-125" />
             <p className="text-terciary vertical-text cursor-pointer group-hover:text-primary transition-colors duration-500 mt-1 mr-1">

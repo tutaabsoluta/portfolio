@@ -3,7 +3,7 @@ import { GlassCard } from "./GlassCard";
 
 export const Projects = () => {
   return (
-    <main className="p-24 flex flex-col items-center" id="projects">
+    <main className="p-24 flex flex-col items-center" id="work">
       <h3 className="text-optional mb-4 uppercase tracking-wider text-sm">
         {`/ My work`}
       </h3>

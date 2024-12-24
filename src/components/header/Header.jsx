@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <header
       className="relative flex items-center justify-center h-screen -mt-20"
-      id="header"
+      id="home"
     >
       {/* Content */}
       <div className="space-y-10 text-center flex flex-col items-center">
@@ -37,7 +37,7 @@ export const Header = () => {
       </div>
 
       <div className="flex items-center gap-2 absolute right-24 bottom-24">
-        <a href="#projects">
+        <a href="#work">
           <button className="flex items-center gap-2 group">
             <IoIosArrowDown className="text-terciary group-hover:scale-125 group-hover:text-primary transition-all duration-500" />
             <span className="text-terciary uppercase text-[10px] tracking-widest group-hover:text-primary transition-colors duration-500">
