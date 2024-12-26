@@ -10,12 +10,12 @@ export const BurgerMenu = () => {
   };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-neutral">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative">
+    <nav className="border-gray-200 bg-neutral">
+      <div>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 md:w-10 md:h-10 justify-center text-sm  rounded-lg focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
           aria-controls="navbar-default"
           aria-expanded={isOpen}
           onClick={onToggle}
@@ -40,11 +40,11 @@ export const BurgerMenu = () => {
         <div
           className={`${
             isOpen
-              ? "fixed top-0 right-0 min-w-56 h-screen bg-white dark:bg-secondary z-50"
+              ? "fixed top-0 right-0 min-w-full xl:min-w-56 h-screen bg-secondary z-50"
               : "hidden"
           }`}
         >
-          <div className="flex items-center justify-center gap-16 mt-12">
+          <div className="flex items-center justify-between xl:justify-center px-8 xl:px-0 xl:gap-16 mt-12">
             <h3 className="uppercase text-xs tracking-widest text-primary">
               Navigation
             </h3>
@@ -52,11 +52,12 @@ export const BurgerMenu = () => {
               <IoCloseSharp />
             </button>
           </div>
-          <ul className="font-medium flex flex-col items-start justify-center h-full space-y-6 ml-8 -mt-8">
+          <ul className="font-medium flex flex-col items-start justify-center h-full space-y-6 ml-8 -mt-16 xl:-mt-8">
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-terciary md:dark:hover:text-optional hover:scale-105 transition-all duration-300 uppercase text-xs tracking-widest"
+                onClick={() => setIsOpen(false)}
+                className="block py-2 px-3 rounded md:bg-transparent md:p-0 text-terciary hover:text-optional hover:scale-105 transition-all duration-300 uppercase text-xs tracking-widest"
                 aria-current="page"
               >
                 Home
@@ -66,7 +67,8 @@ export const BurgerMenu = () => {
             <li>
               <a
                 href="#work"
-                className="block py-2 px-3 text-terciary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-terciary md:dark:hover:text-optional hover:scale-105 transition-all duration-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase text-xs tracking-widest"
+                onClick={() => setIsOpen(false)}
+                className="block py-2 px-3 rounded md:bg-transparent md:p-0 text-terciary hover:text-optional hover:scale-105 transition-all duration-300 uppercase text-xs tracking-widest"
               >
                 Work
               </a>
@@ -75,7 +77,8 @@ export const BurgerMenu = () => {
             <li>
               <a
                 href="#about"
-                className="block py-2 px-3 text-terciary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-terciary md:dark:hover:text-optional hover:scale-105 transition-all duration-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase text-xs tracking-widest"
+                onClick={() => setIsOpen(false)}
+                className="block py-2 px-3 rounded md:bg-transparent md:p-0 text-terciary hover:text-optional hover:scale-105 transition-all duration-300 uppercase text-xs tracking-widest"
               >
                 About
               </a>
@@ -84,7 +87,8 @@ export const BurgerMenu = () => {
             <li>
               <a
                 href="#contact"
-                className="block py-2 px-3 text-terciary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-terciary md:dark:hover:text-optional hover:scale-105 transition-all duration-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase text-xs tracking-widest"
+                onClick={() => setIsOpen(false)}
+                className="block py-2 px-3 rounded md:bg-transparent md:p-0 text-terciary hover:text-optional hover:scale-105 transition-all duration-300 uppercase text-xs tracking-widest"
               >
                 Contact
               </a>

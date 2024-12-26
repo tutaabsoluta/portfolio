@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 export const Header = () => {
   return (
     <header
-      className="relative flex items-center justify-center h-screen -mt-20"
+      className="relative flex items-center justify-center h-screen -mt-20 mb-12 md:mb-0"
       id="home"
     >
       {/* Content */}
@@ -12,7 +12,7 @@ export const Header = () => {
         <div className="flex items-center gap-8">
           <div>
             <h1 className="text-terciary">
-              Hello, I'm <br className="block md:hidden" />
+              Hello, I'm {""}
               <span className="font-bold text-primary">Sergio</span>
             </h1>
           </div>
@@ -25,7 +25,7 @@ export const Header = () => {
           from San Jose, Costa Rica that loves coding!
         </p>
 
-        <Button text={`Let's talk!`} />
+        <Button toSection={'#contact'} text={`Let's talk!`} />
       </div>
 
       <div className="flex items-center gap-2 absolute md:right-24 bottom-24">

@@ -23,4 +23,4 @@ function App() {
 
 export default App;
 
-// TODO: Animaciones. Form: validar, captcha, nodemail. Semantic tags (navbar)
+// TODO: Animaciones. Form: validar, captcha, nodemail. Semantic tags (navbar) revisar tipografias y paddings de divs relativos
