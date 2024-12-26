@@ -11,11 +11,11 @@ function App() {
     <>
       <Navbar />
       <Header />
-      <DivisionLine className={'w-[1100px] mx-auto'} />
+      <DivisionLine className={"w-[300px] md:w-[600px] xl:w-[1100px] mx-auto"} />
       <Projects />
-      <DivisionLine className={'w-[1100px] mx-auto'} />
+      <DivisionLine className={"w-[300px] md:w-[600px] xl:w-[1100px] mx-auto"} />
       <AboutInfo />
-      <DivisionLine className={'w-[1100px] mx-auto'} />
+      <DivisionLine className={"w-[300px] md:w-[600px] xl:w-[1100px] mx-auto"} />
       <Footer />
     </>
   );
@@ -23,4 +23,4 @@ function App() {
 
 export default App;
 
-// TODO: menu sidebar. Animaciones. Form: validar, captcha, nodemail. Dark mode
+// TODO: Animaciones. Form: validar, captcha, nodemail. Semantic tags (navbar)

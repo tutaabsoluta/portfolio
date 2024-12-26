@@ -39,7 +39,13 @@ body {
 
   
   .vertical-text {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    font-size: 12px;
+    writing-mode: unset;
+  }
+
+@media (min-width: 640px) {
+    .vertical-text {
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      font-size: 12px;
+    }
   }
