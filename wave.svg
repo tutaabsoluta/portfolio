@@ -1,0 +1,11 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg fill="#ffffff" width="800px" height="800px" viewBox="0 0 24.00 24.00" id="wave" xmlns="http://www.w3.org/2000/svg" class="icon multi-color" stroke="#ffffff">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<title style="stroke-width:0.192;">wave</title>
+<path id="secondary-stroke" d="M3,11c2.25,0,2.25,2,4.5,2S9.75,11,12,11s2.26,2,4.51,2,2.25-2,4.5-2" style="fill: none; stroke: #BAF99D; stroke-linecap: round; stroke-linejoin: round; stroke-width:0.192;"/>
+<path id="primary-stroke" d="M21,5c-2.25,0-2.25,2-4.5,2S14.25,5,12,5,9.75,7,7.5,7,5.25,5,3,5M3,17c2.25,0,2.25,2,4.5,2S9.75,17,12,17s2.26,2,4.51,2,2.25-2,4.5-2" style="fill: none; stroke: #BAF99D000000; stroke-linecap: round; stroke-linejoin: round; stroke-width:0.192;"/>
+</g>
+</svg>
