@@ -15,14 +15,14 @@ export const GlassCard = ({
         <div className="space-y-5 p-4">
           <div className="flex items-center gap-2">
             {technologies.map((technology, index) => (
-              <Technology imageUrl={technology.url} title={technology.name} key={index} />
+              <Technology imageUrl={technology.url} alt={technology.name} key={index} />
             ))}
           </div>
 
           <div className="absolute right-4 -top-2">
               <img
                 src={imageUrl}
-                alt=""
+                alt={`${title} project`}
                 className="h-16 w-24 rounded-lg outline outline-1 outline-optional/5 opacity-50 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
               />
           </div>
