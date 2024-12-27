@@ -28,8 +28,14 @@ export const Header = () => {
 
       <div className="flex items-center gap-2 absolute md:right-24 bottom-24">
         <a href="#work">
-          <button className="flex items-center gap-2 group">
-            <IoIosArrowDown className="w-8 h-8 md:w-auto md:h-auto text-terciary group-hover:scale-125 group-hover:text-primary transition-all duration-500" />
+          <button
+            className="flex items-center gap-2 group"
+            aria-label="Scroll down"
+          >
+            <IoIosArrowDown
+              className="w-8 h-8 md:w-auto md:h-auto text-terciary group-hover:scale-125 group-hover:text-primary transition-all duration-500"
+              aria-hidden="true"
+            />
             <span className="hidden md:block text-terciary uppercase text-[10px] tracking-widest group-hover:text-primary transition-colors duration-500">
               Scroll down
             </span>
