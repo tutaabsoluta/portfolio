@@ -80,7 +80,7 @@ export const ContactForm = () => {
 
       {/* Submit Button */}
       <div className="flex justify-center">
-        <Button text={`Send Message`} toSection={''} />
+        <Button text={`Send Message`} toSection={''} ariaLabel={'Send Message'} />
       </div>
     </form>
   );

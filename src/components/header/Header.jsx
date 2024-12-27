@@ -23,7 +23,7 @@ export const Header = () => {
           efficient web solutions.
         </p>
 
-        <Button toSection={"#contact"} text={`Let's talk!`} />
+        <Button toSection={"#contact"} text={`Let's talk!`} ariaLabel={'Lets talk!'} />
       </div>
 
       <div className="flex items-center gap-2 absolute md:right-24 bottom-24">

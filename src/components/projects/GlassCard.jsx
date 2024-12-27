@@ -36,7 +36,7 @@ export const GlassCard = ({
               rel="noopener noreferrer"
               target="_blanck"
             >
-              <button className="flex items-center gap-1 bg-optional/5 rounded-md px-6 py-1 outline outline-1 outline-terciary/15 text-terciary text-sm hover:bg-optional/15 transition-colors duration-300">
+              <button aria-label="Open Project" className="flex items-center gap-1 bg-optional/5 rounded-md px-6 py-1 outline outline-1 outline-terciary/15 text-terciary text-sm hover:bg-optional/15 transition-colors duration-300">
                 Link
                 <FaLink />
               </button>
@@ -47,7 +47,7 @@ export const GlassCard = ({
               rel="noopener noreferrer"
               target="_blanck"
             >
-              <button className="flex items-center gap-1 bg-optional/5 rounded-md px-6 py-1 outline outline-1 outline-terciary/15 text-terciary text-sm hover:bg-optional/15 transition-colors duration-300">
+              <button aria-label="Open Github Repository" className="flex items-center gap-1 bg-optional/5 rounded-md px-6 py-1 outline outline-1 outline-terciary/15 text-terciary text-sm hover:bg-optional/15 transition-colors duration-300">
                 Code
                 <FaGithub />
               </button>
