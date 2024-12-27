@@ -8,12 +8,12 @@ body {
 
 /* Global font settings */
 body {
-    @apply text-base leading-relaxed bg-neutral ; 
+    @apply text-base leading-relaxed bg-neutral; 
   }
   
   /* Headings */
   h1 {
-    @apply text-4xl md:text-[64px]; 
+    @apply text-[40px] md:text-[60px] xl:text-[76px]; 
   }
   
   h2 {

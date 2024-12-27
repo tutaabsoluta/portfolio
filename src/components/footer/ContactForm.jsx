@@ -80,7 +80,7 @@ export const ContactForm = () => {
 
       {/* Submit Button */}
       <div className="flex justify-center">
-        <Button text={`Send Message`} />
+        <Button text={`Send Message`} toSection={''} />
       </div>
     </form>
   );

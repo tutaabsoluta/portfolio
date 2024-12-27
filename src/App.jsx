@@ -23,4 +23,11 @@ function App() {
 
 export default App;
 
-// TODO: Animaciones. Form: validar, captcha, nodemail. Semantic tags (navbar) revisar tipografias y paddings de divs relativos
+// TODO: Animaciones
+// todo: Spinner al cargar la pagina. 
+// TODO: Lazy loading componentes mas pesados
+// todo: Form: validar, captcha, nodemail.
+// todo: Semantic tags (navbar) revisar tipografias y paddings de divs relativos
+// todo: usar imagenes webp
+// todo: revisar sugerencias del lighthouse
+

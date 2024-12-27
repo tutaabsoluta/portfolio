@@ -14,8 +14,8 @@ export const GlassCard = ({
       <div className="flex flex-col justify-evenly gap-4 bg-optional/5 hover:bg-optional/10 backdrop-blur-xl rounded-xl border border-white/20 max-w-72 h-auto relative transition-all duration-300">
         <div className="space-y-5 p-4">
           <div className="flex items-center gap-2">
-            {technologies.map((technology) => (
-              <Technology imageUrl={technology.url} key={technology.name} />
+            {technologies.map((technology, index) => (
+              <Technology imageUrl={technology.url} title={technology.name} key={index} />
             ))}
           </div>
 

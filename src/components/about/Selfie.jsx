@@ -5,15 +5,8 @@ export const Selfie = () => {
       <img
         src="shape.svg"
         alt="Background Color"
-        className="w-full max-w-[18rem] object-contain overflow-hidden"
+        className="w-full max-w-[18rem] h-auto object-contain overflow-hidden"
       />
-
-      {/* Shape3 (Imagen que aparece al hacer hover) */}
-      {/* <img
-        src="shape5.svg"
-        alt="Shape 3"
-        className="absolute top-0 left-0 w-full max-w-[18rem] object-contain hidden group-hover:block ease-in-out duration-500 z-10"
-      /> */}
 
       {/* Selfie */}
       <img
