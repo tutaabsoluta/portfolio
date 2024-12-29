@@ -1,3 +1,4 @@
+import { motion, transform } from "framer-motion";
 import { Button } from "..";
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -9,24 +10,49 @@ export const Header = () => {
     >
       {/* Content */}
       <div className="space-y-6 px-8 md:px-0 flex flex-col items-start md:items-center">
-        <h1 className="text-terciary leading-tight">
+        <motion.h1
+          className="text-terciary leading-tight"
+          initial={{ visibility: "hidden", y: 20 }}
+          animate={{ visibility: "visible", y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           Hello, I'm {""} <br className="block md:hidden" />
           <span className="font-bold text-primary">Sergio Duran</span>
-        </h1>
+        </motion.h1>
 
-        <p className="text-terciary text-xl md:text-center max-w-lg">
+        <motion.p
+          className="text-terciary text-xl md:text-center max-w-lg"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+        >
           I'm a passionate{" "}
           <span className="text-primary font-bold text-xl">
             software developer
           </span>{" "}
           from San Jose, Costa Rica, dedicated to building innovative and
           efficient web solutions.
-        </p>
+        </motion.p>
 
-        <Button toSection={"#contact"} text={`Let's talk!`} ariaLabel={'Lets talk!'} />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.8 }}
+        >
+          <Button
+            toSection={"#contact"}
+            text={`Let's talk!`}
+            ariaLabel={"Lets talk!"}
+          />
+        </motion.div>
       </div>
 
-      <div className="flex items-center gap-2 absolute md:right-24 bottom-24">
+      <motion.div
+        className="flex items-center gap-2 absolute md:right-24 bottom-24"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+      >
         <a href="#work">
           <button
             className="flex items-center gap-2 group"
@@ -41,7 +67,7 @@ export const Header = () => {
             </span>
           </button>
         </a>
-      </div>
+      </motion.div>
     </header>
   );
 };

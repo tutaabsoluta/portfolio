@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { ContactForm } from "../footer/ContactForm";
 import { IoIosArrowUp } from "react-icons/io";
 
@@ -24,7 +25,10 @@ export const Footer = () => {
       {/* Go to top button */}
       <div className="flex flex-col items-center md:absolute right-7 md:bottom-32 group mb-4 md:mb-0">
         <a href="#">
-          <button className="flex flex-col items-center" aria-label="Go to the top">
+          <button
+            className="flex flex-col items-center"
+            aria-label="Go to the top"
+          >
             <IoIosArrowUp className="text-terciary group-hover:text-primary transition-all duration-500 group-hover:scale-125 w-8 h-8 md:w-auto md:h-auto" />
             <p className="hidden md:block text-terciary vertical-text cursor-pointer group-hover:text-primary transition-colors duration-500 mt-1 mr-1">
               Go to the top
@@ -35,12 +39,17 @@ export const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="flex items-center justify-center md:fixed left-8 bottom-28 mb-8 md:mb-0">
+      <motion.div
+        className="flex items-center justify-center md:fixed left-8 bottom-28 mb-8 md:mb-0"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+      >
         <p className="left-6  text-slate-500 vertical-text">
           © 2024 Sergio Duran - Almost all rights reserved.
         </p>
         <div className="hidden md:block w-6 h-[1px] bg-slate-500 transform rotate-90 absolute right-0 -bottom-4"></div>
-      </div>
+      </motion.div>
     </footer>
   );
 };

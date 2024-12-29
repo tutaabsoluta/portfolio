@@ -26,6 +26,7 @@ function App() {
           animate={{ opacity: 0 }}
           exit={ {opacity: 0} }
           transition={{ duration: 0.5, delay: 2.5 }} // Retraso para coincidir con el timeout
+          onAnimationComplete={() => setIsLoading(false)} // Cambia el estado después de la animación
         >
           <LoadingSpinner />
         </motion.div>

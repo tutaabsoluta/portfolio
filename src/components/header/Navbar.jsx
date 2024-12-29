@@ -1,8 +1,14 @@
+import { motion } from "framer-motion";
 import { BurgerMenu } from "./BurgerMenu";
 
 export const Navbar = () => {
   return (
-    <div className="w-full mx-auto p-5 relative z-20">
+    <motion.div 
+      className="w-full mx-auto p-5 relative z-20"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <div className="flex justify-between items-center">
         <div>
           <img src="logo.webp" alt="" className="h-20 w-full" />
@@ -12,6 +18,6 @@ export const Navbar = () => {
          <BurgerMenu />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
