@@ -64,7 +64,7 @@ export const BurgerMenu = () => {
                 key={index}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: isOpen ? 1 : 0 }}
-                transition={{ duration: 1, delay: isOpen ? index * 0.3 : 0 }}
+                transition={{ duration: 0.5, delay: isOpen ? index * 0.2 : 0 }}
               >
                 <a
                   href={`#${item.toLowerCase()}`}
@@ -81,7 +81,7 @@ export const BurgerMenu = () => {
             <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: isOpen ? 1 : 0 }}
-            transition={{ duration: 1, delay: 1.2 }}
+            transition={{ duration: 0.5, delay: 1 }}
             >
               <Socials />
             </motion.div>

@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 1000);
 
     return () => clearTimeout(timer); // Cleanup para evitar errores si el componente se desmonta
   }, []);
@@ -25,8 +25,8 @@ function App() {
           initial={{ opacity: 1 }}
           animate={{ opacity: 0 }}
           exit={ {opacity: 0} }
-          transition={{ duration: 0.5, delay: 2.5 }} // Retraso para coincidir con el timeout
-          onAnimationComplete={() => setIsLoading(false)} // Cambia el estado después de la animación
+          transition={{ duration: 0.5, delay: 2.5 }}
+          onAnimationComplete={() => setIsLoading(false)} 
         >
           <LoadingSpinner />
         </motion.div>

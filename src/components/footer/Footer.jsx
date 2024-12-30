@@ -5,25 +5,55 @@ import { IoIosArrowUp } from "react-icons/io";
 export const Footer = () => {
   return (
     <footer className="relative" id="contact">
-      <div className="flex flex-col items-center space-y-8 py-12 px-8 md:py-24">
+      <div className="flex flex-col items-center space-y-8 py-12 px-8 md:pt-40 md:pb-24">
         {/* Heading and paragraph */}
-        <h3 className="text-optional uppercase tracking-wider text-sm">
+        <motion.h3
+          className="text-optional uppercase tracking-wider text-sm"
+          initial={{ y: "50%", opacity: 0 }}
+          whileInView={{ y: "0%", opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+        >
           {`/ Get in touch`}
-        </h3>
-        <h2 className="text-center text-terciary">
+        </motion.h3>
+        <motion.h2
+          className="text-center text-terciary"
+          initial={{ y: "50%", opacity: 0 }}
+          whileInView={{ y: "0%", opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+        >
           I'd Love to Hear from You!
-        </h2>
-        <p className="mt-8 text-base text-center text-terciary">
+        </motion.h2>
+        <motion.p
+          className="mt-8 text-base text-center text-terciary"
+          initial={{ y: "50%", opacity: 0 }}
+          whileInView={{ y: "0%", opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+        >
           Do you have a project or an opportunity in mind?{" "}
           <br className="hidden md:block" />
           Don't hesitate to reach out!
-        </p>
-
-        <ContactForm />
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          <ContactForm />
+        </motion.div>
       </div>
 
       {/* Go to top button */}
-      <div className="flex flex-col items-center md:absolute right-7 md:bottom-32 group mb-4 md:mb-0">
+      <motion.div
+        className="flex flex-col items-center md:absolute right-7 md:bottom-32 group mb-4 md:mb-0"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
         <a href="#">
           <button
             className="flex flex-col items-center"
@@ -36,14 +66,14 @@ export const Footer = () => {
           </button>
         </a>
         <div className="hidden md:block w-6 h-[1px] bg-terciary transform rotate-90 relative right-0 -bottom-8 mr-1"></div>
-      </div>
+      </motion.div>
 
       {/* Copyright */}
       <motion.div
         className="flex items-center justify-center md:fixed left-8 bottom-28 mb-8 md:mb-0"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 0.5, delay: 1.6 }}
       >
         <p className="left-6  text-slate-500 vertical-text">
           © 2024 Sergio Duran - Almost all rights reserved.

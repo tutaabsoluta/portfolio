@@ -12,9 +12,9 @@ export const Header = () => {
       <div className="space-y-6 px-8 md:px-0 flex flex-col items-start md:items-center">
         <motion.h1
           className="text-terciary leading-tight"
-          initial={{ visibility: "hidden", y: 20 }}
+          initial={{ visibility: "hidden", y: '20%' }}
           animate={{ visibility: "visible", y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
         >
           Hello, I'm {""} <br className="block md:hidden" />
           <span className="font-bold text-primary">Sergio Duran</span>
@@ -22,9 +22,9 @@ export const Header = () => {
 
         <motion.p
           className="text-terciary text-xl md:text-center max-w-lg"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: '20%' }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.9 }}
         >
           I'm a passionate{" "}
           <span className="text-primary font-bold text-xl">
@@ -37,7 +37,7 @@ export const Header = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.8 }}
+          transition={{ duration: 0.5, delay: 1.1 }}
         >
           <Button
             toSection={"#contact"}
@@ -51,7 +51,7 @@ export const Header = () => {
         className="flex items-center gap-2 absolute md:right-24 bottom-24"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 0.5, delay: 1.3 }}
       >
         <a href="#work">
           <button
