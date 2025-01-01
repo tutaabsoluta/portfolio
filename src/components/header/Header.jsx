@@ -12,9 +12,10 @@ export const Header = () => {
       <div className="space-y-6 px-8 md:px-0 flex flex-col items-start md:items-center">
         <motion.h1
           className="text-terciary leading-tight"
-          initial={{ visibility: "hidden", y: '20%' }}
-          animate={{ visibility: "visible", y: 0 }}
-          transition={{ duration: 0.5, delay: 0.7 }}
+          initial={{ y: "50%", opacity: 0 }}
+          whileInView={{ y: "0%", opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
         >
           Hello, I'm {""} <br className="block md:hidden" />
           <span className="font-bold text-primary">Sergio Duran</span>
@@ -22,7 +23,7 @@ export const Header = () => {
 
         <motion.p
           className="text-terciary text-xl md:text-center max-w-lg"
-          initial={{ opacity: 0, y: '20%' }}
+          initial={{ opacity: 0, y: "20%" }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.9 }}
         >

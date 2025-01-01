@@ -53,9 +53,9 @@ export const BurgerMenu = () => {
             <h3 className="uppercase text-xs tracking-widest text-primary">
               Navigation
             </h3>
-            <motion.button className="text-white" onClick={onToggle}>
+            <button className="text-white" onClick={onToggle}>
               <IoCloseSharp />
-            </motion.button>
+            </button>
           </div>
 
           <ul className="font-medium flex flex-col items-start justify-center h-full space-y-6 ml-8 -mt-16 xl:-mt-8">
