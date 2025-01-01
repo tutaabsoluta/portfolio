@@ -7,7 +7,6 @@ export const ContactInput = ({ name, className }) => {
         id={`floating_${name}`}
         className={`block py-2.5 px-0 w-full text-sm  bg-transparent border-0 border-b-2  appearance-none text-terciary border-gray-600 focus:border-primary focus:outline-none focus:ring-0 peer ${className}`}
         placeholder=" "
-        required
       />
       <label
         htmlFor={`floating_${name}`}

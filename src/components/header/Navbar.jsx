@@ -1,13 +1,12 @@
 import { motion } from "framer-motion";
 import { BurgerMenu } from "./BurgerMenu";
+import { navbarAnimation } from "../../animations/motionConfig";
 
 export const Navbar = () => {
   return (
     <motion.div 
       className="w-full mx-auto p-5 relative z-20"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      { ...navbarAnimation }
     >
       <div className="flex justify-between items-center">
         <div>

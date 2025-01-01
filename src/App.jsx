@@ -6,8 +6,11 @@ import { Footer } from "./components/footer";
 import { Header, Navbar } from "./components/header";
 import { Projects } from "./components/projects";
 import { DivisionLine, LoadingSpinner } from "./components/utils";
+import { spinnerAnimation } from "./animations/motionConfig";
 
 function App() {
+
+  const divisionLineClasses = 'w-[300px] md:w-[600px] xl:w-[1100px] mx-auto';
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -15,17 +18,14 @@ function App() {
       setIsLoading(false);
     }, 1000);
 
-    return () => clearTimeout(timer); // Cleanup para evitar errores si el componente se desmonta
+    return () => clearTimeout(timer); 
   }, []);
 
   return (
     <>
       {isLoading ? (
         <motion.div
-          initial={{ opacity: 1 }}
-          animate={{ opacity: 0 }}
-          exit={ {opacity: 0} }
-          transition={{ duration: 0.5, delay: 2.5 }}
+          { ...spinnerAnimation }
           onAnimationComplete={() => setIsLoading(false)} 
         >
           <LoadingSpinner />
@@ -35,15 +35,15 @@ function App() {
           <Navbar />
           <Header />
           <DivisionLine
-            className={"w-[300px] md:w-[600px] xl:w-[1100px] mx-auto"}
+            className={divisionLineClasses}
           />
           <Projects />
           <DivisionLine
-            className={"w-[300px] md:w-[600px] xl:w-[1100px] mx-auto"}
+            className={divisionLineClasses}
           />
           <AboutInfo />
           <DivisionLine
-            className={"w-[300px] md:w-[600px] xl:w-[1100px] mx-auto"}
+            className={divisionLineClasses}
           />
           <Footer />
         </>
