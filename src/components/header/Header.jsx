@@ -1,4 +1,4 @@
-import { motion, transform } from "framer-motion";
+import { motion } from "framer-motion";
 import { Button } from "..";
 import { IoIosArrowDown } from "react-icons/io";
 

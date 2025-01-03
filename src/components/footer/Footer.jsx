@@ -1,47 +1,27 @@
 import { motion } from "framer-motion";
 import { ContactForm } from "../footer/ContactForm";
 import { IoIosArrowUp } from "react-icons/io";
+import { fadeInOpacity } from "../../animations/motionConfig";
+import { HeadingSection } from "../utils";
 
 export const Footer = () => {
   return (
     <footer className="relative" id="contact">
-      <div className="flex flex-col items-center space-y-8 py-12 px-8 md:pt-40 md:pb-24">
-        {/* Heading and paragraph */}
-        <motion.h3
-          className="text-optional uppercase tracking-wider text-sm"
-          initial={{ y: "50%", opacity: 0 }}
-          whileInView={{ y: "0%", opacity: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
-        >
-          {`/ Get in touch`}
-        </motion.h3>
-        <motion.h2
-          className="text-center text-terciary"
-          initial={{ y: "50%", opacity: 0 }}
-          whileInView={{ y: "0%", opacity: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
-        >
-          I'd Love to Hear from You!
-        </motion.h2>
-        <motion.p
-          className="mt-8 text-base text-center text-terciary"
-          initial={{ y: "50%", opacity: 0 }}
-          whileInView={{ y: "0%", opacity: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
-        >
-          Do you have a project or an opportunity in mind?{" "}
-          <br className="hidden md:block" />
-          Don't hesitate to reach out!
-        </motion.p>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 1, delay: 0.5 }}
-        >
+      <div className="flex flex-col items-center py-12 px-8 md:pt-40 md:pb-24">
+        <HeadingSection
+          h3Text={"/ Get in touch"}
+          h2Text={`I'd Love to Hear from You!`}
+          children={
+            <p>
+              {" "}
+              Do you have a project or an opportunity in mind?{" "}
+              <br className="hidden md:block" />
+              Don't hesitate to reach out!
+            </p>
+          }
+        />
+
+        <motion.div {...fadeInOpacity}>
           <ContactForm />
         </motion.div>
       </div>

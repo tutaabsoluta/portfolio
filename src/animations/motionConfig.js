@@ -15,14 +15,21 @@ export const fadeIn = {
   initial: { y: "50%", opacity: 0 },
   whileInView: { y: "0%", opacity: 1 },
   viewport: { once: true, amount: 0.5 },
-  transition: { duration: 0.4, delay: 0.3 },
+  transition: { duration: 0.6, delay: 0.5 },
 };
 
 export const projectAnimation = (index) => {
   return {
     initial: { opacity: 0 },
     whileInView: { opacity: 1 },
-    viewport: { once: true, amount: 0.7 },
-    transition: { duration: 0.5, delay: 0.3 * index },
+    viewport: { once: true, amount: 0.9 },
+    transition: { duration: 0.5, delay: 0.4 * index },
   };
+};
+
+export const fadeInOpacity = {
+  initial: { opacity: 0 },
+  whileInView: { opacity: 1 },
+  viewport: { once: true, amount: 0.5 },
+  transition: { duration: 1, delay: 0.5 },
 };

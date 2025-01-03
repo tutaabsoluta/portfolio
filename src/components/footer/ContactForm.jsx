@@ -1,5 +1,4 @@
 import { useForm } from "react-hook-form";
-import { Button } from "../utils";
 import { ContactInput } from "./ContactInput";
 import { ContactMessage } from "./ContactMessage";
 import { FormButton } from "./FormButton";
@@ -9,7 +8,7 @@ export const ContactForm = () => {
 
   const onSubmit = ( e ) => {
     e.preventDefault()
-    console.log("Sending...");
+
   };
 
   return (

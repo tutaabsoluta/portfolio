@@ -1,4 +1,3 @@
-import { RiTailwindCssLine } from "react-icons/ri";
 
 export const projects = [
   {
