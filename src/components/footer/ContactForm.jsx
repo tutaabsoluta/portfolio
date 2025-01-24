@@ -1,8 +1,11 @@
 import { useForm } from "react-hook-form";
 import { ErrorNotification } from "../utils";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
+import { FaCheckCircle } from "react-icons/fa";
 
 export const ContactForm = () => {
+
+
   const {
     register,
     handleSubmit,
@@ -10,13 +13,19 @@ export const ContactForm = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (e) => {
-    e.preventDefault();
+  const onSubmit = () => {
+    toast.success('Message sent successfully!', {
+      icon: <FaCheckCircle style={{ color: '#A5FFB3', width: 25, height: 25 }} />, 
+      style: {
+        backgroundColor: '#021526',
+        color: '#CBD5E1'
+      },
+      autoClose: 3000,
+      hideProgressBar: true ,
+      closeOnClick: true
+    })
+    reset();
   };
-
-  const notify = () => {
-    toast('Message send!')
-  }
 
   return (
     <form
@@ -29,8 +38,20 @@ export const ContactForm = () => {
           <input
             {...register("name", {
               required: "Please provide your name.",
-              minLength: 3,
-              maxLength: 30,
+              minLength: {
+                value: 3,
+                message: "Must be at least 3 characters",
+              },
+              maxLength: {
+                value: 30,
+                message:
+                  "The name exceeds the maximum length of 30 characters.",
+              },
+              pattern: {
+                value: /^[a-zA-ZÀ-ÿ\s'-]+$/,
+                message:
+                  "Please enter a valid name without numbers or special characters.",
+              },
             })}
             type="text"
             name={"name"}
@@ -44,18 +65,19 @@ export const ContactForm = () => {
           >
             Name
           </label>
-          {<ErrorNotification>{errors.name?.message}</ErrorNotification>}
+          {<ErrorNotification>
+            {errors.name?.message}
+          </ErrorNotification>}
         </div>
 
         {/* Email field */}
         <div className="relative z-0 group">
           <input
             {...register("email", {
-              required:
-                'Don’t forget to add your email',
+              required: "Don’t forget to add your email",
               pattern: {
                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: `Invalid format: "This doesn’t look like a valid email. Try something like: name@example.com."`,
+                message: `Invalid format: Try something like: name@example.com.`,
               },
             })}
             type="text"
@@ -80,7 +102,15 @@ export const ContactForm = () => {
           {...register("subject", {
             required:
               "A subject will help me understand what your message is about.",
-            maxLength: 150,
+            maxLength: {
+              value: 150,
+              message:
+                "The subject exceeds the maximum length of 150 characters",
+            },
+            minLength: {
+              value: 3,
+              message: "The message should contain at least 3 characters",
+            },
           })}
           type="text"
           name={"subject"}
@@ -101,8 +131,17 @@ export const ContactForm = () => {
       <div className="relative z-0 mb-5 group">
         <textarea
           {...register("message", {
-            required: "What’s on your mind? Drop me a message, and I’ll get back to you.",
-            maxLength: 200,
+            required:
+              "What’s on your mind? Drop me a message, and I’ll get back to you.",
+            maxLength: {
+              value: 1000,
+              message:
+                "The subject exceeds the maximum length of 1000 characters",
+            },
+            minLength: {
+              value: 10,
+              message: "The message should contain at least 10 characters",
+            },
           })}
           name={"message"}
           id={"message"}
@@ -122,7 +161,6 @@ export const ContactForm = () => {
       {/* Submit Button */}
       <div className="flex justify-center">
         <button
-          onClick={notify}
           type="submit"
           className="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-2xl group cursor-pointer mt-4"
         >
@@ -133,7 +171,6 @@ export const ContactForm = () => {
           </span>
           <span className="absolute inset-0 border-[3px] border-primary rounded-2xl"></span>
         </button>
-        <ToastContainer theme="dark" />
       </div>
     </form>
   );

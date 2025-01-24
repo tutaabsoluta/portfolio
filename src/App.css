@@ -53,3 +53,14 @@ body {
       font-size: 12px;
     }
   }
+
+  .Toastify__toast {
+    display: flex;
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center;     /* Centrar contenido verticalmente */
+    text-align: center;      /* Asegurar que el texto esté centrado */
+  }
+
+  .Toastify__icon--success {
+    color: #A5FFB3;
+  }

@@ -7,6 +7,7 @@ import { Header, Navbar } from "./components/header";
 import { Projects } from "./components/projects";
 import { DivisionLine, LoadingSpinner } from "./components/utils";
 import { spinnerAnimation } from "./animations/motionConfig";
+import { ToastContainer } from "react-toastify";
 
 function App() {
 
@@ -48,6 +49,8 @@ function App() {
           <Footer />
         </>
       )}
+
+      <ToastContainer />
     </>
   );
 }
