@@ -5,7 +5,7 @@ export const Socials = () => {
   return (
     <div className="flex space-x-4">
       <a
-        href="https://www.linkedin.com/in/sergio-dur%C3%A1n-018071260/"
+        href="https://www.linkedin.com/in/sergioduranleiton/"
         target="_blank"
         rel="noopener noreferrer"
       >
