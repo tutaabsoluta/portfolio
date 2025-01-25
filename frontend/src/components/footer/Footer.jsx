@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ContactForm } from "../footer/ContactForm";
+import { ContactForm } from "./ContactForm";
 import { IoIosArrowUp } from "react-icons/io";
 import { fadeInOpacity } from "../../animations/motionConfig";
 import { HeadingSection } from "../utils";

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { AboutContent, Selfie } from "../about";
+import { AboutContent, Selfie } from ".";
 import { fadeInOpacity } from "../../animations/motionConfig";
 import { HeadingSection } from "../utils";
 

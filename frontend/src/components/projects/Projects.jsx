@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { projects } from "../../data/";
+import { projects } from "../../data";
 import { GlassCard } from "./GlassCard";
-import { projectAnimation } from "../../animations/";
+import { projectAnimation } from "../../animations";
 import { HeadingSection } from "../utils";
 
 export const Projects = () => {
