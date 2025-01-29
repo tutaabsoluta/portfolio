@@ -17,3 +17,4 @@ transporter.verify((error, success) => {
     console.log("✅ Email server ready to send emails");
   }
 });
+
