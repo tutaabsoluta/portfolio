@@ -1,1 +1,0 @@
-// Manejo de la solicitud desde el frontend
