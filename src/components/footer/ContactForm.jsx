@@ -2,9 +2,13 @@ import { useForm } from "react-hook-form";
 import { ErrorNotification } from "../utils";
 import { toast } from "react-toastify";
 import { FaCheckCircle } from "react-icons/fa";
+import { IoCloseCircleSharp } from "react-icons/io5";
+
+import axios from "axios";
+import { useState } from "react";
 
 export const ContactForm = () => {
-
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const {
     register,
@@ -13,17 +17,44 @@ export const ContactForm = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = () => {
-    toast.success('Message sent successfully!', {
-      icon: <FaCheckCircle style={{ color: '#A5FFB3', width: 25, height: 25 }} />, 
-      style: {
-        backgroundColor: '#021526',
-        color: '#CBD5E1'
-      },
-      autoClose: 3000,
-      hideProgressBar: true ,
-      closeOnClick: true
-    })
+  const onSubmit = async (data) => {
+    setIsSubmitting(true); // Deshabilita el botón al empezar el envío
+    try {
+      await axios.post(import.meta.env.VITE_API_URL, {
+        name: data.name,
+        email: data.email,
+        subject: data.subject,
+        message: data.message,
+      });
+      toast.success("Message sent successfully!", {
+        icon: (
+          <FaCheckCircle style={{ color: "#A5FFB3", width: 25, height: 25 }} />
+        ),
+        style: {
+          backgroundColor: "#021526",
+          color: "#CBD5E1",
+        },
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+      });
+    } catch (error) {
+      toast.error("Something went wrong, try again!", {
+        icon: (
+          <IoCloseCircleSharp
+            style={{ color: "#CBD5E1", width: 25, height: 25 }}
+          />
+        ),
+        style: {
+          backgroundColor: "#021526",
+          color: "#CBD5E1",
+        },
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+      });
+    }
+    setIsSubmitting(false); // Habilita el botón después de completar el envío
     reset();
   };
 
@@ -65,9 +96,7 @@ export const ContactForm = () => {
           >
             Name
           </label>
-          {<ErrorNotification>
-            {errors.name?.message}
-          </ErrorNotification>}
+          {<ErrorNotification>{errors.name?.message}</ErrorNotification>}
         </div>
 
         {/* Email field */}
@@ -162,14 +191,35 @@ export const ContactForm = () => {
       <div className="flex justify-center">
         <button
           type="submit"
-          className="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-2xl group cursor-pointer mt-4"
+          className={`relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-2xl group mt-4 ${
+            isSubmitting ? "cursor-not-allowed opacity-50" : "cursor-pointer"
+          }`}
+          disabled={isSubmitting}
         >
-          <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-primary opacity-[3%]"></span>
-          <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-primary opacity-100 group-hover:-translate-x-8"></span>
-          <span className="relative w-full text-left text-primary transition-colors duration-200 ease-in-out group-hover:text-accent">
+          <span
+            className={`w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-primary ${
+              isSubmitting ? "opacity-0" : "opacity-[3%]"
+            }`}
+          ></span>
+          <span
+            className={`absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-primary ${
+              isSubmitting
+                ? "opacity-0"
+                : "opacity-100 group-hover:-translate-x-8"
+            }`}
+          ></span>
+          <span
+            className={`relative w-full text-left text-primary transition-colors duration-200 ease-in-out ${
+              isSubmitting ? "text-primary" : "group-hover:text-accent"
+            }`}
+          >
             Send Message
           </span>
-          <span className="absolute inset-0 border-[3px] border-primary rounded-2xl"></span>
+          <span
+            className={`absolute inset-0 border-[3px] border-primary rounded-2xl ${
+              isSubmitting ? "opacity-0" : ""
+            }`}
+          ></span>
         </button>
       </div>
     </form>
