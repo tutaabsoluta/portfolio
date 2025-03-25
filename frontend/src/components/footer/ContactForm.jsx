@@ -20,7 +20,7 @@ export const ContactForm = () => {
   const onSubmit = async (data) => {
     setIsSubmitting(true); // Deshabilita el botón al empezar el envío
     try {
-      await axios.post(process.env.REACT_APP_API_URL, {
+      await axios.post(import.meta.env.VITE_API_URL, {
         name: data.name,
         email: data.email,
         subject: data.subject,
