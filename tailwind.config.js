@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -6,18 +5,20 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: [ 'Roboto Slab', 'serif' ],
-      colors: {
-        primary: '#A5FFB3', //b3b3ff
-        secondary: '#0b1720', // midnight blue #272757
-        terciary: '#CBD5E1', //d3d3ff lavender
-        neutral: '#0F1C24 ', // bg 021526
-        accent: '#041C32', // footer,
-        optional: '#f0acac' // f3a683
-        
+      fontFamily: {
+        'lora': ['Lora', 'serif'],
+        'merriweather': ['Merriweather', 'serif'],
       },
-        boxShadow: {
-        lg: "0 4px 8px rgba(179, 179, 255, 0.3)", 
+      colors: {
+        primary: '#A5FFB3',
+        secondary: '#0b1720',
+        terciary: '#CBD5E1',
+        neutral: '#0F1C24',
+        accent: '#041C32',
+        optional: '#f0acac'
+      },
+      boxShadow: {
+        lg: "0 4px 8px rgba(179, 179, 255, 0.3)",
       },
     },
   },

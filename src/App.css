@@ -41,18 +41,14 @@ body {
     @apply text-sm md:text-base;
   }
 
-  
-  .vertical-text {
-    writing-mode: unset;
-  }
 
-@media (min-width: 640px) {
-    .vertical-text {
-      writing-mode: vertical-lr;
-      transform: rotate(180deg);
-      font-size: 12px;
-    }
-  }
+h1, h2, h3, h4, h5, h6 {
+  @apply font-lora
+}
+
+p {
+  @apply font-merriweather
+}
 
   .Toastify__toast {
     display: flex;
