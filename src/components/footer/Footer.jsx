@@ -56,7 +56,7 @@ export const Footer = () => {
         transition={{ duration: 0.5, delay: 1.6 }}
       >
         <p className="left-6  text-slate-500 vertical-text">
-          © 2024 Sergio Duran - Almost all rights reserved.
+          © 2024 Sergio Duran - All rights reserved.
         </p>
         <div className="hidden md:block w-6 h-[1px] bg-slate-500 transform rotate-90 absolute right-0 -bottom-4"></div>
       </motion.div>

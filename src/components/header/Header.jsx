@@ -1,72 +1,163 @@
 import { motion } from "framer-motion";
-import { Button } from "..";
 import { IoIosArrowDown } from "react-icons/io";
 
 export const Header = () => {
   return (
     <header
-      className="relative flex items-center justify-center h-screen -mt-28 md:-mt-20 mb-12 md:mb-0"
+      className="relative flex flex-col items-center justify-center min-h-screen py-16 -mt-28 md:-mt-20 overflow-hidden"
       id="home"
     >
-      {/* Content */}
-      <div className="space-y-6 px-8 md:px-0 flex flex-col items-start md:items-center">
-        <motion.h1
-          className="text-terciary leading-tight"
-          initial={{ y: "50%", opacity: 0 }}
-          whileInView={{ y: "0%", opacity: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
-        >
-          Hello, I'm {""} <br className="block md:hidden" />
-          <span className="font-bold text-primary">Sergio Duran</span>
-        </motion.h1>
-
-        <motion.p
-          className="text-terciary text-xl md:text-center max-w-lg"
-          initial={{ opacity: 0, y: "20%" }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.9 }}
-        >
-          I'm a passionate{" "}
-          <span className="text-primary font-bold text-xl">
-            software developer
-          </span>{" "}
-          from San Jose, Costa Rica, dedicated to building innovative and
-          efficient web solutions.
-        </motion.p>
-
+      {/* Background elements */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 1.1 }}
-        >
-          <Button
-            toSection={"#contact"}
-            text={`Let's talk!`}
-            ariaLabel={"Lets talk!"}
-          />
-        </motion.div>
+          className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-primary/10 blur-3xl"
+          animate={{
+            scale: [1, 1.2, 1],
+            x: [0, 20, 0],
+            y: [0, -20, 0],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Number.POSITIVE_INFINITY,
+            repeatType: "reverse",
+          }}
+        />
+        <motion.div
+          className="absolute bottom-1/3 left-1/3 w-72 h-72 rounded-full bg-primary/5 blur-3xl"
+          animate={{
+            scale: [1, 1.3, 1],
+            x: [0, -30, 0],
+            y: [0, 30, 0],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Number.POSITIVE_INFINITY,
+            repeatType: "reverse",
+            delay: 1,
+          }}
+        />
       </div>
 
+      <div className="container mx-auto px-6 md:px-8 relative z-10">
+        {/* Main content */}
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
+          {/* Main text content */}
+          <div className="space-y-6">
+            <motion.h1
+              className="text-4xl md:text-6xl lg:text-7xl font-bold text-terciary"
+              initial={{ y: "30%", opacity: 0 }}
+              whileInView={{ y: "0%", opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              Sergio Duran
+            </motion.h1>
+
+            <motion.div
+              className="relative inline-block"
+              initial={{ y: "30%", opacity: 0 }}
+              whileInView={{ y: "0%", opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">Web Developer</h2>
+              <motion.div
+                className="absolute -bottom-2 left-0 right-0 h-1 bg-primary/30 rounded-full"
+                initial={{ width: 0 }}
+                whileInView={{ width: "100%" }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+              />
+            </motion.div>
+
+            <motion.p
+              className="text-terciary text-base md:text-lg max-w-xl mx-auto"
+              initial={{ opacity: 0, y: "20%" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+            >
+              Passionate about creating intuitive, accessible, and high-performance web applications that enhance user
+              experience.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="flex flex-wrap gap-4 justify-center pt-4"
+            >
+
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 px-6 py-3 border border-primary/20 rounded-full text-primary hover:bg-primary/5 transition-colors"
+                aria-label="Contact"
+              >
+                Let's talk
+              </a>
+            </motion.div>
+          </div>
+        </div>
+
+        <div className="absolute -z-10 left-0 top-1/4 max-w-xs hidden lg:block opacity-20">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 1.2 }}
+          >
+            <pre className="text-primary text-xs">
+              <code>{`function createExperience() {
+  const skills = ['HTML', 'CSS', 
+    'JavaScript', 'React', 'Node'];
+  
+  return {
+    creative: true,
+    passionate: true,
+    skills
+  };
+}`}</code>
+            </pre>
+          </motion.div>
+        </div>
+
+        <div className="absolute -z-10 right-0 bottom-1/4 max-w-xs hidden lg:block opacity-20">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 1.5 }}
+          >
+            <pre className="text-primary text-xs">
+              <code>{`const portfolio = {
+  name: 'Sergio Duran',
+  role: 'Web Developer',
+  goal: 'Creating amazing
+    user experiences',
+  contact: () => {
+    // Let's connect!
+  }
+};`}</code>
+            </pre>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
       <motion.div
-        className="flex items-center gap-2 absolute md:right-24 bottom-24"
+        className="flex items-center gap-2 absolute bottom-12 left-1/2 transform -translate-x-1/2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 1.3 }}
+        transition={{ duration: 0.5, delay: 1.5 }}
       >
-        <a href="#work">
-          <button
-            className="flex items-center gap-2 group"
-            aria-label="Scroll down"
-          >
-            <IoIosArrowDown
-              className="w-8 h-8 md:w-auto md:h-auto text-terciary group-hover:scale-125 group-hover:text-primary transition-all duration-500"
-              aria-hidden="true"
-            />
-            <span className="hidden md:block text-terciary uppercase text-[10px] tracking-widest group-hover:text-primary transition-colors duration-500">
+        <a href="#work" className="group">
+          <div className="flex flex-col items-center gap-2">
+            <span className="text-terciary uppercase text-xs tracking-widest group-hover:text-primary transition-colors duration-300">
               Scroll down
             </span>
-          </button>
+            <motion.div animate={{ y: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}>
+              <IoIosArrowDown className="w-6 h-6 text-primary" aria-hidden="true" />
+            </motion.div>
+          </div>
         </a>
       </motion.div>
     </header>

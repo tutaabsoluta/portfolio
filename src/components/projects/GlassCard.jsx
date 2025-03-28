@@ -28,7 +28,7 @@ export const GlassCard = ({
           </div>
 
           <h3 className="text-white text-lg group-hover:text-primary transition-all duration-300">{title}</h3>
-          <p className="text-slate-400 text-sm">{description}</p>
+          <p className="text-slate-400 text-md">{description}</p>
 
           <div className="flex justify-center gap-8">
             <a 
