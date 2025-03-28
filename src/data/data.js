@@ -2,11 +2,31 @@
 export const projects = [
   {
     id: 1,
+    title: "PERN Ticket System",
+    description:
+      "A ticket management platform where users can register issues, update them, and track their status in real time. Built with the PERN stack, following Clean Architecture principles for a scalable structure.",
+    technologies: [
+      { name: "PostgreSQL", url: "postgres.svg" },
+      { name: "Express", url: "express.svg" },
+      { name: "React", url: "react.svg" },
+      { name: "Node", url: "node-js.svg" },
+      { name: "Tailwind", url: "tailwind.svg" },
+      { name: "TypeScript", url: "typescript.svg" },
+  
+    ],
+    image: "support-tickets.png",
+    links: {
+      project: "https://tickets-system-fs.vercel.app/",
+      github: "https://github.com/tutaabsoluta/support-ticket-system",
+     },
+  },
+  {
+    id: 2,
     title: "Bakery Shop",
     description:
-      "This is a bakery application coded from a Figma template. The app uses React for component-based architecture, Tailwind CSS.",
+    "This is a bakery application coded from a Figma template. The app uses React for component-based architecture, Tailwind CSS.",
     technologies: [
-    
+      
       { name: "Tailwind", url: "tailwind.svg" },
       { name: "React", url: "react.svg" },
       { name: "Figma", url: "figma.svg" },
@@ -15,10 +35,10 @@ export const projects = [
     links: {
       project: "https://cc-bakery.netlify.app/",
       github: "https://github.com/tutaabsoluta/cc-bakery"
-     },
+    },
   },
   {
-    id: 2,
+    id: 3,
     title: "Totor Recipes",
     description:
       "It allows users to search for specific recipes, explore unique dishes, and view detailed information, including ingredients and preparation steps.",
@@ -32,22 +52,6 @@ export const projects = [
     links: {
       project: "https://tjrecipes.netlify.app/",
       github: "https://github.com/tutaabsoluta/tj-recipes",
-     },
-  },
-  {
-    id: 3,
-    title: "Patients Admin",
-    description:
-      "In this application, you can manage patients through a form and, depending on their status, edit or delete their record. ",
-    technologies: [
-      { name: "Tailwind", url: "tailwind.svg" },
-      { name: "React", url: "react.svg" },
-      { name: "Zustand", url: "zustand.svg" },
-    ],
-    image: "patients.webp",
-    links: {
-      project: "https://patientszustandtta.netlify.app/",
-      github: "https://github.com/tutaabsoluta/patients-zustand",
      },
   },
 ];

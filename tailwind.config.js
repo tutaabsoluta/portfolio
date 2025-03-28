@@ -13,7 +13,7 @@ export default {
         terciary: '#CBD5E1', //d3d3ff lavender
         neutral: '#0F1C24 ', // bg 021526
         accent: '#041C32', // footer,
-        optional: '#D4B4FF' // f3a683
+        optional: '#f0acac' // f3a683
         
       },
         boxShadow: {

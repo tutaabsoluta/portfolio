@@ -6,13 +6,12 @@ import { HeadingSection } from "../utils";
 
 export const Projects = () => {
   return (
-    <main className="py-12 md:p-40 flex flex-col items-center" id="work">
+    <main className="py-12 md:p-32 flex flex-col items-center" id="work">
 
       
       <HeadingSection 
         h2Text={'/ My work'}
-        children={<p>Here's some projects that i have made. Each one represents a unique challenge and learning opportunity, reflecting my growth as a developer and
-            problem-solver.</p>}
+        children={<p>In my personal projects, I experiment and refine my skills. I’ve built a PERN Ticket System with real-time updates, a pixel-perfect Bakery Shop using React + Tailwind, and Totor Recipes for easy cooking inspiration via an API.</p>}
       />
 
       <div className="grid md:grid-cols-2 xl:grid-cols-3 place-items-center gap-8">

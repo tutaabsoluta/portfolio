@@ -1,9 +1,9 @@
 
-export const LoadingSpinner = () => {
+export const LoadingSpinner = ({ className }) => {
   return (
     <div
       role="status"
-      className="h-screen flex items-center justify-center"
+      className={`flex items-center justify-center ${ className }`}
     >
       <svg
         aria-hidden="true"

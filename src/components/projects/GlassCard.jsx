@@ -11,7 +11,7 @@ export const GlassCard = ({
 }) => {
   return (
     <div className="group">
-      <div className="flex flex-col justify-evenly gap-4 bg-optional/5 hover:bg-optional/10 backdrop-blur-xl rounded-xl border border-white/20 max-w-80 h-auto relative transition-all duration-300">
+      <div className="flex flex-col justify-evenly gap-4 bg-optional/5 hover:bg-optional/10 backdrop-blur-xl rounded-xl border border-white/20 max-w-80 h-80 relative transition-all duration-300">
         <div className="space-y-5 p-4">
           <div className="flex items-center gap-2">
             {technologies.map((technology, index) => (
@@ -28,7 +28,7 @@ export const GlassCard = ({
           </div>
 
           <h3 className="text-white text-lg group-hover:text-primary transition-all duration-300">{title}</h3>
-          <p className="text-slate-400 text-md">{description}</p>
+          <p className="text-slate-300 text-md">{description}</p>
 
           <div className="flex justify-center gap-8">
             <a 

@@ -7,7 +7,7 @@ import { HeadingSection, Socials } from "../utils";
 export const Footer = () => {
   return (
 <footer className="relative" id="contact">
-      <div className="flex flex-col items-center py-12 px-8 md:pt-40 md:pb-24">
+      <div className="flex flex-col items-center py-12 px-8 md:pt-32 md:pb-24">
         <HeadingSection
           h2Text={`/ Get in touch`}
           children={

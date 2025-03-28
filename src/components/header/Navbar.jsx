@@ -1,12 +1,9 @@
-import { motion } from "framer-motion";
 import { BurgerMenu } from "./BurgerMenu";
-import { navbarAnimation } from "../../animations/motionConfig";
 
 export const Navbar = () => {
   return (
-    <motion.div 
+    <div 
       className="w-full mx-auto p-5 relative z-20"
-      { ...navbarAnimation }
     >
       <div className="flex justify-between items-center">
         <div>
@@ -17,6 +14,6 @@ export const Navbar = () => {
          <BurgerMenu />
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };

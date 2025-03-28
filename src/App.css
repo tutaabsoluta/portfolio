@@ -64,3 +64,7 @@ body {
   .Toastify__icon--success {
     color: #A5FFB3;
   }
+
+  .Toastify__close-button {
+    color: #ffffff;
+  }

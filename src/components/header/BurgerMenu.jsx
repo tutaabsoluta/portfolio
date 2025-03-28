@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion"; // Asegúrate de importar motion
 import { IoCloseSharp } from "react-icons/io5";
-import { DivisionLine, Socials } from "../utils/";
+import { DivisionLine } from "../utils/";
 
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,7 +83,6 @@ export const BurgerMenu = () => {
             animate={{ opacity: isOpen ? 1 : 0 }}
             transition={{ duration: 0.5, delay: 1 }}
             >
-              <Socials />
             </motion.div>
           </ul>
         </motion.div>

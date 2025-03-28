@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { ErrorNotification } from "../utils";
+import { ErrorNotification, LoadingSpinner } from "../utils";
 import { toast } from "react-toastify";
 import { FaCheckCircle } from "react-icons/fa";
 import { IoCloseCircleSharp } from "react-icons/io5";
@@ -31,7 +31,7 @@ export const ContactForm = () => {
           <FaCheckCircle style={{ color: "#A5FFB3", width: 25, height: 25 }} />
         ),
         style: {
-          backgroundColor: "#021526",
+          backgroundColor: "#383838",
           color: "#CBD5E1",
         },
         autoClose: 3000,
@@ -42,11 +42,11 @@ export const ContactForm = () => {
       toast.error("Something went wrong, try again!", {
         icon: (
           <IoCloseCircleSharp
-            style={{ color: "#CBD5E1", width: 25, height: 25 }}
+            style={{ color: "#f0acac", width: 25, height: 25 }}
           />
         ),
         style: {
-          backgroundColor: "#021526",
+          backgroundColor: "#383838",
           color: "#CBD5E1",
         },
         autoClose: 3000,
@@ -191,12 +191,15 @@ export const ContactForm = () => {
       <div className="flex justify-center">
         <button
           type="submit"
-          className={`inline-flex items-center gap-2 px-6 py-3 border border-primary/20 rounded-full text-primary hover:bg-primary/5 transition-colors ${ isSubmitting ? 'cursor-not-allowed' : 'cursor-pointer' }`}
+          className={`min-w-40 items-center gap-2 px-6 py-3 border border-primary/20 rounded-full text-primary hover:bg-primary/5 transition-colors ${ isSubmitting ? 'cursor-not-allowed' : 'cursor-pointer' }`}
           aria-label="Send message"
           disabled={isSubmitting}
         >
-            Send message!
+          
+            { isSubmitting? '' : 'Send message!' }
+            <LoadingSpinner className={`${ isSubmitting ? 'block' : 'hidden' }`}/>
         </button>
+        
       </div>
     </form>
   );

@@ -77,8 +77,7 @@ export const Header = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              Passionate about creating intuitive, accessible, and high-performance web applications that enhance user
-              experience.
+              Building seamless, user-centric web experiences with a focus on performance and accessibility.
             </motion.p>
 
             <motion.div
@@ -109,14 +108,16 @@ export const Header = () => {
             <pre className="text-primary text-xs">
               <code>{`function createExperience() {
   const skills = ['HTML', 'CSS', 
-    'JavaScript', 'React', 'Node'];
+    'JavaScript', 'React',
+     'Node', 'SQL'];
   
   return {
+    persistent: true
     creative: true,
-    passionate: true,
+    driven: true,
     skills
   };
-}`}</code>
+};`}</code>
             </pre>
           </motion.div>
         </div>
