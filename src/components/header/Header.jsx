@@ -50,7 +50,7 @@ export const Header = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Sergio Duran
+              Sergio Durán
             </motion.h1>
 
             <motion.div

@@ -188,7 +188,7 @@ export const ContactForm = () => {
       </div>
 
       {/* Submit Button */}
-      <div className="flex justify-center">
+      <div className="flex justify-center h-[52px]">
         <button
           type="submit"
           className={`min-w-40 items-center gap-2 px-6 py-3 border border-primary/20 rounded-full text-primary hover:bg-primary/5 transition-colors ${ isSubmitting ? 'cursor-not-allowed' : 'cursor-pointer' }`}
