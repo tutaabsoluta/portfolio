@@ -9,14 +9,14 @@ export const Socials = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaLinkedin className="text-xl text-terciary hover:text-optional hover:scale-105 transition-all duration-300" />
+        <FaLinkedin className="text-xl text-terciary hover:text-primary hover:scale-105 transition-all duration-300" />
       </a>
       <a
         href="https://github.com/tutaabsoluta"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaGithub className="text-xl text-terciary hover:text-optional hover:scale-105 transition-all duration-300" />
+        <FaGithub className="text-xl text-terciary hover:text-primary hover:scale-105 transition-all duration-300" />
       </a>
     </div>
   );

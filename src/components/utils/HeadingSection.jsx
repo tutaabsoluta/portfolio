@@ -5,7 +5,7 @@ export const HeadingSection = ({ h2Text, h3Text, children }) => {
   return (
     <>
       <motion.h3
-        className="text-optional mb-4 uppercase tracking-wider text-sm text-center"
+        className="text-primary mb-4 uppercase tracking-wider text-sm text-center"
         {...fadeIn}
       >
         { h3Text }

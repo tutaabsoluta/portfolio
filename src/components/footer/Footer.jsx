@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { ContactForm } from "../footer/ContactForm";
 import { IoIosArrowUp } from "react-icons/io";
 import { fadeInOpacity } from "../../animations/motionConfig";
-import { HeadingSection } from "../utils";
+import { HeadingSection, Socials } from "../utils";
 
 export const Footer = () => {
   return (
-    <footer className="relative" id="contact">
+<footer className="relative" id="contact">
       <div className="flex flex-col items-center py-12 px-8 md:pt-40 md:pb-24">
         <HeadingSection
           h3Text={"/ Get in touch"}
@@ -14,8 +14,7 @@ export const Footer = () => {
           children={
             <p>
               {" "}
-              Do you have a project or an opportunity in mind?{" "}
-              <br className="hidden md:block" />
+              Do you have a project or an opportunity in mind? <br className="hidden md:block" />
               Don't hesitate to reach out!
             </p>
           }
@@ -26,40 +25,47 @@ export const Footer = () => {
         </motion.div>
       </div>
 
-      {/* Go to top button */}
-      <motion.div
-        className="flex flex-col items-center md:absolute right-7 md:bottom-32 group mb-4 md:mb-0"
+      {/* Footer bottom section with copyright and socials */}
+      <div className="w-full border-t border-slate-800 mt-8">
+        <div className="container mx-auto px-8 py-6 flex flex-col md:flex-row justify-between items-center">
+          {/* Copyright - now horizontal */}
+          <motion.p
+            className="text-terciary text-sm"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 1.6 }}
+          >
+            © 2024 Sergio Duran - All rights reserved.
+          </motion.p>
+
+          {/* Socials */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 1.8 }}
+            className="mt-4 md:mt-0"
+          >
+            <Socials />
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Go to top button - redesigned */}
+      {/* <motion.div
+        className="fixed right-6 bottom-6 z-10"
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.5 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
         <a href="#">
           <button
-            className="flex flex-col items-center"
+            className="bg-secondary hover:outline-primary text-white p-2 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
             aria-label="Go to the top"
           >
-            <IoIosArrowUp className="text-terciary group-hover:text-primary transition-all duration-500 group-hover:scale-125 w-8 h-8 md:w-auto md:h-auto" />
-            <p className="hidden md:block text-terciary vertical-text cursor-pointer group-hover:text-primary transition-colors duration-500 mt-1 mr-1">
-              Go to the top
-            </p>
+            <IoIosArrowUp className="w-6 h-6" />
           </button>
         </a>
-        <div className="hidden md:block w-6 h-[1px] bg-terciary transform rotate-90 relative right-0 -bottom-8 mr-1"></div>
-      </motion.div>
-
-      {/* Copyright */}
-      <motion.div
-        className="flex items-center justify-center md:fixed left-8 bottom-28 mb-8 md:mb-0"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 1.6 }}
-      >
-        <p className="left-6  text-slate-500 vertical-text">
-          © 2024 Sergio Duran - All rights reserved.
-        </p>
-        <div className="hidden md:block w-6 h-[1px] bg-slate-500 transform rotate-90 absolute right-0 -bottom-4"></div>
-      </motion.div>
+      </motion.div> */}
     </footer>
   );
 };

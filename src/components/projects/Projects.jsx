@@ -7,11 +7,13 @@ import { HeadingSection } from "../utils";
 export const Projects = () => {
   return (
     <main className="py-12 md:p-40 flex flex-col items-center" id="work">
+
+      
       <HeadingSection 
         h3Text={'/ My work'} 
-        h2Text={'Latest projects I have worked on'}
-        children={<p>Here are some of the projects I've been working on recently. Each one
-        has been an opportunity to learn and experiment.</p>}
+        h2Text={'Showcasing My  Journey'}
+        children={<p>Each project represents a unique challenge and learning opportunity, reflecting my growth as a developer and
+            problem-solver.</p>}
       />
 
       <div className="grid md:grid-cols-2 xl:grid-cols-3 place-items-center gap-8">
