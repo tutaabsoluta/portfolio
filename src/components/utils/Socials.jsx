@@ -8,6 +8,7 @@ export const Socials = () => {
         href="https://www.linkedin.com/in/sergioduranleiton/"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Sergio Duran Linkedin's profile"
       >
         <FaLinkedin className="text-xl text-terciary hover:text-primary hover:scale-105 transition-all duration-300" />
       </a>
@@ -15,6 +16,7 @@ export const Socials = () => {
         href="https://github.com/tutaabsoluta"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Sergio Duran Github's profile"
       >
         <FaGithub className="text-xl text-terciary hover:text-primary hover:scale-105 transition-all duration-300" />
       </a>

@@ -92,6 +92,7 @@ export const Header = () => {
                 href="#contact"
                 className="inline-flex items-center gap-2 px-6 py-3 border border-primary/20 rounded-full text-primary hover:bg-primary/5 transition-colors"
                 aria-label="Contact"
+                
               >
                 Let's talk
               </a>
