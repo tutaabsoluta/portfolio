@@ -1,6 +1,6 @@
 export const Selfie = () => {
   return (
-    <div className="relative group">
+    <div className="relative z-10 group">
       {/* BG Image */}
       <img
         src="shape.svg"

@@ -10,7 +10,7 @@ export const GlassCard = ({
   links,
 }) => {
   return (
-    <div className="group">
+    <article className="group">
       <div className="flex flex-col justify-evenly gap-4 bg-optional/5 hover:bg-optional/10 backdrop-blur-xl rounded-xl border border-white/20 max-w-80 h-80 relative transition-all duration-300">
         <div className="space-y-5 p-4">
           <div className="flex items-center gap-2">
@@ -55,6 +55,6 @@ export const GlassCard = ({
           </div>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
