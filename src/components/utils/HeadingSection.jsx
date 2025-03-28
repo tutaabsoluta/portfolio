@@ -11,7 +11,7 @@ export const HeadingSection = ({ h2Text, h3Text, children }) => {
         { h3Text }
       </motion.h3>
       <motion.h2
-        className="text-center mb-8 text-terciary leading-none"
+        className="text-center mb-8 text-primary leading-none"
         {...fadeIn}
       >
         { h2Text }

@@ -9,8 +9,7 @@ export const Footer = () => {
 <footer className="relative" id="contact">
       <div className="flex flex-col items-center py-12 px-8 md:pt-40 md:pb-24">
         <HeadingSection
-          h3Text={"/ Get in touch"}
-          h2Text={`I'd Love to Hear from You!`}
+          h2Text={`/ Get in touch`}
           children={
             <p>
               {" "}

@@ -10,9 +10,8 @@ export const Projects = () => {
 
       
       <HeadingSection 
-        h3Text={'/ My work'} 
-        h2Text={'Showcasing My  Journey'}
-        children={<p>Each project represents a unique challenge and learning opportunity, reflecting my growth as a developer and
+        h2Text={'/ My work'}
+        children={<p>Here's some projects that i have made. Each one represents a unique challenge and learning opportunity, reflecting my growth as a developer and
             problem-solver.</p>}
       />
 

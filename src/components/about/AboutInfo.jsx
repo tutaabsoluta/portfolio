@@ -8,8 +8,7 @@ export const AboutInfo = () => {
     <div className="p-12 md:p-40" id="about">
 
     <HeadingSection
-      h3Text={'/ About me'}
-      h2Text={'A little bit about me'}
+      h2Text={'/ About me'}
     />
 
 
