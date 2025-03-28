@@ -23,7 +23,7 @@ export const GlassCard = ({
               <img
                 src={imageUrl}
                 alt={`${title} project`}
-                className="h-16 w-24 rounded-lg outline outline-1 outline-optional/5 opacity-50 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                className="h-16 w-24 rounded-lg outline outline-1 outline-optional/5 opacity-50 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 object-cover"
               />
           </div>
 
