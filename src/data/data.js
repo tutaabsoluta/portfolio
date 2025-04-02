@@ -17,7 +17,7 @@ export const projects = [
     image: "support-tickets.png",
     links: {
       project: "https://tickets-system-fs.vercel.app/",
-      github: "https://github.com/tutaabsoluta/support-ticket-system",
+      github: "https://github.com/tutaabsoluta/fs-tickets-pern",
      },
   },
   {
