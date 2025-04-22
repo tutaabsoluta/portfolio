@@ -100,7 +100,7 @@ export const Header = () => {
           </div>
         </div>
 
-        <div className="absolute -z-10 left-0 top-1/4 max-w-xs hidden lg:block opacity-20">
+        <div className="absolute -z-10 left-0 top-1/4 max-w-xs hidden lg:block opacity-20" aria-hidden='true'>
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -123,7 +123,7 @@ export const Header = () => {
           </motion.div>
         </div>
 
-        <div className="absolute -z-10 right-0 bottom-1/4 max-w-xs hidden lg:block opacity-20">
+        <div className="absolute -z-10 right-0 bottom-1/4 max-w-xs hidden lg:block opacity-20" aria-hidden='true'>
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
