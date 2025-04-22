@@ -14,7 +14,7 @@ export const projects = [
       { name: "TypeScript", url: "typescript.svg" },
   
     ],
-    image: "support-tickets.png",
+    image: "support-tickets.webp",
     links: {
       project: "https://tickets-system-fs.vercel.app/",
       github: "https://github.com/tutaabsoluta/fs-tickets-pern",
@@ -22,6 +22,24 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Night Trips",
+    description:
+      "A platform showcasing night trips, allowing users to explore various destinations that offers a seamless browsing experience with built-in accessibility and SEO optimization.",
+    technologies: [
+      { name: "Node", url: "node-js.svg" },
+      { name: "Handlebars", url: "handlebars-js.svg" },
+      { name: "Tailwind", url: "tailwind.svg" },
+      { name: "Figma", url: "figma.svg" },
+
+    ],
+    image: "trips.webp",
+    links: {
+      project: "https://hbs-agency-production.up.railway.app/",
+      github: "https://github.com/tutaabsoluta/tj-recipes",
+     },
+  },
+  {
+    id: 3,
     title: "Bakery Shop",
     description:
     "This is a bakery application coded from a Figma template. The app uses React for component-based architecture, Tailwind CSS.",
@@ -36,23 +54,6 @@ export const projects = [
       project: "https://cc-bakery.netlify.app/",
       github: "https://github.com/tutaabsoluta/cc-bakery"
     },
-  },
-  {
-    id: 3,
-    title: "Totor Recipes",
-    description:
-      "It allows users to search for specific recipes, explore unique dishes, and view detailed information, including ingredients and preparation steps.",
-    technologies: [
-      { name: "Tailwind", url: "tailwind.svg" },
-      { name: "React", url: "react.svg" },
-      { name: "Zustand", url: "zustand.svg" },
-
-    ],
-    image: "recipe.webp",
-    links: {
-      project: "https://tjrecipes.netlify.app/",
-      github: "https://github.com/tutaabsoluta/tj-recipes",
-     },
   },
 ];
 
