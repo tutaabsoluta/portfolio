@@ -11,7 +11,7 @@ export const Projects = () => {
       
       <HeadingSection 
         h2Text={'/ My work'}
-        children={<p>In my personal projects, I experiment and refine my skills. I’ve built a PERN Ticket System with real-time updates, a pixel-perfect Bakery Shop using React + Tailwind, and Totor Recipes for easy cooking inspiration via an API.</p>}
+        children={<p>In my personal projects, I experiment and refine my skills. I’ve built a PERN Ticket System with real-time updates, a night trips platform using Node.js and Handlebars as a template engine, and a pixel-perfect Bakery Shop using React + Tailwind.</p>}
       />
 
       <div className="grid md:grid-cols-2 xl:grid-cols-3 place-items-center gap-8">
