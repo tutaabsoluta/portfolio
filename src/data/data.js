@@ -4,7 +4,7 @@ export const projects = [
     id: 1,
     title: "PERN Ticket System",
     description:
-      "A ticket management platform where users can register issues, update them, and track their status in real time. Built with the PERN stack, following Clean Architecture principles for a scalable structure.",
+      "A ticket management platform where users can register issues, update them, and track their status in real time. Built with the PERN stack, following Clean Architecture.",
     technologies: [
       { name: "PostgreSQL", url: "postgres.svg" },
       { name: "Express", url: "express.svg" },
@@ -27,6 +27,7 @@ export const projects = [
       "A platform showcasing night trips, allowing users to explore various destinations that offers a seamless browsing experience with built-in accessibility and SEO optimization.",
     technologies: [
       { name: "Node", url: "node-js.svg" },
+      { name: "Express", url: "express.svg" },
       { name: "Handlebars", url: "handlebars-js.svg" },
       { name: "Tailwind", url: "tailwind.svg" },
       { name: "Figma", url: "figma.svg" },
@@ -35,7 +36,7 @@ export const projects = [
     image: "trips.webp",
     links: {
       project: "https://hbs-agency-production.up.railway.app/",
-      github: "https://github.com/tutaabsoluta/tj-recipes",
+      github: "https://github.com/tutaabsoluta/hbs-agency",
      },
   },
   {

@@ -11,7 +11,7 @@ export const GlassCard = ({
 }) => {
   return (
     <article className="group">
-      <div className="flex flex-col justify-evenly gap-4 bg-optional/5 hover:bg-optional/10 backdrop-blur-xl rounded-xl border border-white/20 max-w-80 h-80 relative transition-all duration-300">
+      <div className="flex flex-col justify-evenly gap-4 bg-optional/5 hover:bg-optional/10 backdrop-blur-xl rounded-xl border border-white/20 max-w-80 h-[21rem] relative transition-all duration-300 py-3">
         <div className="space-y-5 p-4">
           <div className="flex items-center gap-2">
             {technologies.map((technology, index) => (
@@ -36,9 +36,9 @@ export const GlassCard = ({
               rel="noopener noreferrer"
               target="_blanck"
             >
-              <button aria-label="Open Project" className="flex items-center gap-1 bg-optional/5 rounded-md px-6 py-1 outline outline-1 outline-terciary/15 text-terciary text-sm hover:bg-optional/15 transition-colors duration-300">
+              <button aria-label="Open Project" className="flex items-center gap-2 bg-optional/5 rounded-md px-6 py-2 outline outline-1 outline-terciary/15 text-terciary text-base fontbo hover:bg-optional/15 transition-colors duration-300">
                 Link
-                <FaLink />
+                <FaLink className="w-4 h-4" />
               </button>
             </a>
 
@@ -47,9 +47,9 @@ export const GlassCard = ({
               rel="noopener noreferrer"
               target="_blanck"
             >
-              <button aria-label="Open Github Repository" className="flex items-center gap-1 bg-optional/5 rounded-md px-6 py-1 outline outline-1 outline-terciary/15 text-terciary text-sm hover:bg-optional/15 transition-colors duration-300">
+              <button aria-label="Open Github Repository" className="flex items-center gap-2 bg-optional/5 rounded-md px-6 py-2 outline outline-1 outline-terciary/15 text-terciary text-base fontbo hover:bg-optional/15 transition-colors duration-300">
                 Code
-                <FaGithub />
+                <FaGithub className="w-5 h-5" />
               </button>
             </a>
           </div>
