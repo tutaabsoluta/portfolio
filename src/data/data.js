@@ -35,7 +35,7 @@ export const projects = [
     ],
     image: "trips.webp",
     links: {
-      project: "https://hbs-agency-production.up.railway.app/",
+      project: "https://hbs-agency.onrender.com/",
       github: "https://github.com/tutaabsoluta/hbs-agency",
      },
   },
