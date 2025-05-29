@@ -60,7 +60,7 @@ export const Header = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">Web Developer</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">Full-Stack Developer</h2>
               <motion.div
                 className="absolute -bottom-2 left-0 right-0 h-1 bg-primary/30 rounded-full"
                 initial={{ width: 0 }}
