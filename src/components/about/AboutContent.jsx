@@ -8,17 +8,16 @@ export const AboutContent = () => {
           {" "}
           scalable, maintainable applications
         </span>{" "}
-        with Node.js, Express, PostgreSQL, and React, following coding best
-        practices to ensure performance, accessibility, and a smooth user
-        experience.
+        by following coding best practices to ensure performance, accessibility,
+        and a smooth user experience.
       </p>
 
       <p className="text-md leading-relaxed text-terciary">
         I’ve built and deployed full-stack projects with backend services
         creating
-        <span className="text-primary"> RESTful APIs</span>, using
-        <span className="text-primary"> JWT authentication</span>, managing
-        databases, developing dynamic user interfaces, and consuming APIs.
+        <span className="text-primary"> RESTful APIs</span>, implementing
+        authentication flows, managing databases, developing dynamic user
+        interfaces, and consuming APIs.
       </p>
 
       <p className="text-md leading-relaxed text-terciary">
