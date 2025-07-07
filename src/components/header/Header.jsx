@@ -77,7 +77,7 @@ export const Header = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              Building seamless, user-centric web experiences with a focus on performance and accessibility.
+              Building seamless, user-centric web experiences with a strong focus on performance, accessibility, and scalable backend solutions.
             </motion.p>
 
             <motion.div
