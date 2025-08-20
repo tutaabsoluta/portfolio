@@ -4,7 +4,7 @@ export const Technology = ({ imageUrl, alt }) => {
     <img
       src={ imageUrl } 
       alt={`${alt} logo`}
-      className="w-4 h-4 grayscale group-hover:grayscale-0 transition-all duration-300"
+      className="w-4 h-4 transition-all duration-300"
     />
   </div>
   );

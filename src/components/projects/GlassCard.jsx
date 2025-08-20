@@ -27,8 +27,8 @@ export const GlassCard = ({
               />
           </div>
 
-          <h3 className="text-white text-lg group-hover:text-primary transition-all duration-300">{title}</h3>
-          <p className="text-slate-300 text-md">{description}</p>
+          <h3 className="text-lg text-primary transition-all duration-300">{title}</h3>
+          <p className="text-slate-300 text-sm leading-relaxed">{description}</p>
 
           <div className="flex justify-center gap-8">
             <a 
@@ -36,7 +36,7 @@ export const GlassCard = ({
               rel="noopener noreferrer"
               target="_blanck"
             >
-              <button aria-label="Open Project" className="flex items-center gap-2 bg-optional/5 rounded-md px-6 py-2 outline outline-1 outline-terciary/15 text-terciary text-base fontbo hover:bg-optional/15 transition-colors duration-300">
+              <button aria-label="Open Project" className="flex items-center gap-2 bg-white/20 rounded-md px-6 py-2 outline outline-1 outline-terciary/15 text-terciary text-base hover:bg-white/40 transition-colors duration-300">
                 Link
                 <FaLink className="w-4 h-4" />
               </button>
@@ -47,7 +47,7 @@ export const GlassCard = ({
               rel="noopener noreferrer"
               target="_blanck"
             >
-              <button aria-label="Open Github Repository" className="flex items-center gap-2 bg-optional/5 rounded-md px-6 py-2 outline outline-1 outline-terciary/15 text-terciary text-base fontbo hover:bg-optional/15 transition-colors duration-300">
+              <button aria-label="Open Github Repository" className="flex items-center gap-2 bg-optional/5 rounded-md px-6 py-2 outline outline-1 outline-terciary/15 text-terciary text-base hover:bg-optional/15 transition-colors duration-300">
                 Code
                 <FaGithub className="w-5 h-5" />
               </button>
