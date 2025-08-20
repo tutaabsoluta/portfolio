@@ -14,7 +14,7 @@ export const Projects = () => {
         children={<p>In my personal projects, I experiment and refine my skills. I’ve built a PERN Ticket System with real-time updates, a night trips platform using Node.js and Handlebars as a template engine, and a pixel-perfect Bakery Shop using React + Tailwind.</p>}
       />
 
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 place-items-center gap-8">
+      <div className="grid md:grid-cols-2 xl:grid-cols-2 place-items-center gap-8">
         {projects.map((project, index) => (
           <motion.div
             key={project.id}

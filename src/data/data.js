@@ -39,23 +39,23 @@ export const projects = [
       github: "https://github.com/tutaabsoluta/hbs-agency",
      },
   },
-  {
-    id: 3,
-    title: "Bakery Shop",
-    description:
-    "This is a bakery application coded from a Figma template. The app uses React for component-based architecture, Tailwind CSS.",
-    technologies: [
+  // {
+  //   id: 3,
+  //   title: "Bakery Shop",
+  //   description:
+  //   "This is a bakery application coded from a Figma template. The app uses React for component-based architecture, Tailwind CSS.",
+  //   technologies: [
       
-      { name: "Tailwind", url: "tailwind.svg" },
-      { name: "React", url: "react.svg" },
-      { name: "Figma", url: "figma.svg" },
-    ],
-    image: "bakery.webp",
-    links: {
-      project: "https://cc-bakery.netlify.app/",
-      github: "https://github.com/tutaabsoluta/cc-bakery"
-    },
-  },
+  //     { name: "Tailwind", url: "tailwind.svg" },
+  //     { name: "React", url: "react.svg" },
+  //     { name: "Figma", url: "figma.svg" },
+  //   ],
+  //   image: "bakery.webp",
+  //   links: {
+  //     project: "https://cc-bakery.netlify.app/",
+  //     github: "https://github.com/tutaabsoluta/cc-bakery"
+  //   },
+  // },
 ];
 
 
