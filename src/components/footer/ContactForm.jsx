@@ -188,10 +188,10 @@ export const ContactForm = () => {
       </div>
 
       {/* Submit Button */}
-      <div className="flex justify-center h-[52px]">
+      <div className="h-[52px]">
         <button
           type="submit"
-          className={`min-w-40 items-center gap-2 px-6 py-3 border border-primary/20 rounded-full text-primary hover:bg-primary/5 transition-colors ${ isSubmitting ? 'cursor-not-allowed' : 'cursor-pointer' }`}
+          className={`min-w-40 items-center gap-2 px-6 py-3 border bg-primary/85 border-primary/20 rounded-full text-accent font-bold hover:bg-primary transition-colors ${ isSubmitting ? 'cursor-not-allowed' : 'cursor-pointer' }`}
           aria-label="Send message"
           disabled={isSubmitting}
         >

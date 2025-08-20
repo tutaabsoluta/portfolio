@@ -10,9 +10,10 @@ export const GlassCard = ({
 }) => {
   return (
     <article className="group">
-      <div className="flex flex-col md:flex-row bg-optional/5 hover:bg-optional/10 backdrop-blur-xl rounded-xl border border-white/20 
-                      max-w-md md:max-w-2xl h-auto md:h-[21rem] relative transition-all duration-300 overflow-hidden">
-        
+      <div
+        className="flex flex-col md:flex-row bg-optional/5 hover:bg-optional/10 backdrop-blur-xl rounded-xl border border-white/20 
+                      max-w-md md:max-w-2xl h-auto md:h-[21rem] relative transition-all duration-300 overflow-hidden"
+      >
         {/* Contenedor de la imagen */}
         <div className="w-full md:w-1/2 p-3 flex items-center justify-center">
           <img
@@ -23,12 +24,12 @@ export const GlassCard = ({
         </div>
 
         {/* Contenedor del contenido */}
-        <div className="flex flex-col justify-evenly gap-4 w-full md:w-1/2 py-3 border-t md:border-t-0 md:border-l border-white/20">
+        <div className="flex flex-col justify-evenly gap-4 w-full md:w-1/2 py-3">
           <div className="space-y-5 p-4">
             <h3 className="text-xl text-primary transition-all duration-300">
               {title}
             </h3>
-            
+
             <div className="flex items-center gap-2">
               {technologies.map((technology, index) => (
                 <Technology
@@ -38,7 +39,7 @@ export const GlassCard = ({
                 />
               ))}
             </div>
-            
+
             <p className="text-slate-300 text-sm leading-relaxed">
               {description}
             </p>
@@ -66,7 +67,6 @@ export const GlassCard = ({
             </div>
           </div>
         </div>
-
       </div>
     </article>
   );
