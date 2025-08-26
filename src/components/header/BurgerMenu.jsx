@@ -11,7 +11,7 @@ export const BurgerMenu = () => {
   };
 
   return (
-    <nav className="border-gray-200 bg-neutral">
+    <nav className="border-gray-200 bg-neutral mt-5">
       <div>
         <button
           data-collapse-toggle="navbar-default"

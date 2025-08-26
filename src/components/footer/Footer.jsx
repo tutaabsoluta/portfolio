@@ -8,11 +8,11 @@ export const Footer = () => {
   return (
     <footer className="relative" id="contact">
       <div className="flex flex-col py-12 px-8 md:px-32 md:pt-32">
-        <div className="flex items-center justify-center gap-4 mb-20">
+        <div className="flex items-center justify-center gap-4 mb-12">
           <Mail className="text-primary w-[48px] h-[48px] " />
           <h2 className="text-white text-center">Get in Touch</h2>
         </div>
-        <p className="text-terciary text-center">
+        <p className="text-terciary text-center mb-12">
           Do you have a project or an opportunity in mind? <br />
           Don't hesitate to reach out!
         </p>
