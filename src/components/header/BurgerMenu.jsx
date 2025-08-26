@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion"; // Asegúrate de importar motion
+import { motion } from "framer-motion";
 import { IoCloseSharp } from "react-icons/io5";
 import { DivisionLine } from "../utils/";
 

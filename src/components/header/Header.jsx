@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 export const Header = () => {
   return (
     <header
-      className="relative flex flex-col items-center justify-center min-h-screen py-16 -mt-28 md:-mt-20 overflow-hidden"
+      className="relative flex flex-col items-center justify-center min-h-screen py-16 mt-8 md:mt-10 overflow-hidden"
       id="home"
     >
       {/* Background elements */}
@@ -38,13 +38,13 @@ export const Header = () => {
         />
       </div>
 
-      <div className="container mx-auto px-6 md:px-8 relative z-10">
+      <div className="container mx-auto px-9 md:px-8 relative z-10">
         {/* Main content */}
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
           {/* Main text content */}
           <div className="space-y-6">
             <motion.h1
-              className="text-4xl md:text-6xl lg:text-7xl font-bold text-terciary"
+              className="text-4xl md:text-6xl 2xl:text-7xl font-bold text-white"
               initial={{ y: "30%", opacity: 0 }}
               whileInView={{ y: "0%", opacity: 1 }}
               viewport={{ once: true }}
@@ -60,7 +60,7 @@ export const Header = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">Full-Stack Developer</h2>
+              <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-bold text-primary">Full-Stack Developer</h2>
               <motion.div
                 className="absolute -bottom-2 left-0 right-0 h-1 bg-primary/30 rounded-full"
                 initial={{ width: 0 }}
@@ -71,7 +71,7 @@ export const Header = () => {
             </motion.div>
 
             <motion.p
-              className="text-terciary text-base md:text-lg max-w-xl mx-auto"
+              className="text-terciary text-base md:text-md 2xl:text-lg max-w-xl mx-auto"
               initial={{ opacity: 0, y: "20%" }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -85,7 +85,7 @@ export const Header = () => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.8 }}
-              className="flex flex-wrap gap-4 justify-center pt-4"
+              className="flex flex-wrap gap-4 justify-center"
             >
 
               <a
@@ -106,20 +106,7 @@ export const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 1.2 }}
           >
-            <pre className="text-primary text-xs">
-              <code>{`function createExperience() {
-  const skills = ['HTML', 'CSS', 
-    'JavaScript', 'React',
-     'Node', 'SQL'];
-  
-  return {
-    persistent: true
-    creative: true,
-    driven: true,
-    skills
-  };
-};`}</code>
-            </pre>
+
           </motion.div>
         </div>
 
@@ -129,17 +116,7 @@ export const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 1.5 }}
           >
-            <pre className="text-primary text-xs">
-              <code>{`const portfolio = {
-  name: 'Sergio Duran',
-  role: 'Web Developer',
-  goal: 'Creating amazing
-    user experiences',
-  contact: () => {
-    // Let's connect!
-  }
-};`}</code>
-            </pre>
+
           </motion.div>
         </div>
       </div>

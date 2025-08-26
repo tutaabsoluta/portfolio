@@ -14,7 +14,7 @@ export const projects = [
       { name: "TypeScript", url: "typescript.svg" },
   
     ],
-    image: "support-tickets.webp",
+    image: "Project_1.png",
     links: {
       project: "https://tickets-system-fs.vercel.app/",
       github: "https://github.com/tutaabsoluta/fs-tickets-pern",
